@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng Nhập</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="text-center">Đăng Nhập</h3>
+                <h5 id="msg" style="color: red;" class="text-center"></h5>
+            </div>
+            <div class="panel-body">
+                <form method="post" action="process_form_login.php" onsubmit="return validateForm();">
+                    <div class="form-group">
+                        <input placeholder="Email" required="true" type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Mật khẩu" required="true" type="password" class="form-control" id="pwd" name="password" minlength="6">
+                    </div>
+                    <div class="button-container text-center">
+                        <button class="btn btn-success">Đăng Nhập</button>
+                        <a href="register.html" class="link">Đăng ký tài khoản mới</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/login.js"></script>
+</body>
+</html>
