@@ -61,24 +61,113 @@ img {
     width: 150px;
 }
 
-footer {
+
+.footer-trangchu {
     display: flex; 
     justify-content: space-evenly; 
     align-items: center; 
     padding: 20px; 
     background-color:#001f5d; 
     border-top: 1px solid #ccc; 
-    position: fixed;
+    position: flex;
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-top:100px;
 }
 
-footer h3 {
+.footer-trangchu h3 {
     margin: 0; 
     font-size: 16px; 
     color: #fff; 
 }
+
+.imggioithieu{
+    width:100%;
+    padding-top:140px;
+    
+}
+
+.imggioithieu img{
+    width:100%;
+
+}
+
+.bestseller_jean{
+    padding-top:30px;
+    padding-left:20px;
+    
+}
+.bestseller_jean h6{
+
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.bestseller_tay{
+    margin-top:50px;
+    padding-left:20px;
+}
+
+.bestseller_tay h6{
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.bestseller_short{
+    margin-top:80px;
+    padding-left:20px;
+}
+
+.bestseller_short h6{
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.bestseller_jogger{
+    margin-top:80px;
+    padding-left:20px;
+}
+
+.bestseller_jogger h6{
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.bestseller_boxer{
+    margin-top:80px;
+    padding-left:20px;
+}
+
+.bestseller_boxer h6{
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+
+.thongtinlova{
+    
+    margin:20px;
+    margin-top:100px;
+    font-size:25px;
+
+}
+.thongtinlova legend{
+    font-weight: bold;
+    font-size:30px;
+    
+}
+
+.thongtinlova_noidung{
+    margin:50px;
+    margin-top:20px;
+}
+
+
+
+
+
+
 
 
 

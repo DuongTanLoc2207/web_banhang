@@ -1,0 +1,93 @@
+.lovahead{
+    padding:30px;
+    border:1px solid black;
+    margin:20px;
+    margin-top:100px;
+
+}
+.chaomung{
+    font-size:30px;
+    padding-left:40px;
+
+}
+.lovahead h1{
+    color:rgb(10, 10, 112);
+    font-size:40px;
+}
+.lovahead_content{
+    font-size:25px;
+    margin-top:10px;
+
+}
+
+.lovaproduct{
+    padding:20px;
+    border:1px solid black;
+    margin:20px;
+}
+
+.lovaproduct legend{
+    font-size:35px;
+    color:rgb(7, 103, 181);
+
+}
+.lovaproduct_jean{
+    font-size:25px;
+    margin-top:30px;
+}
+.lovaproduct_tay{
+    font-size:25px;
+    margin-top:20px;
+}
+.lovaproduct_short{
+    font-size:25px;
+    margin-top:20px;
+}
+.lovaproduct_jogger{
+    font-size:25px;
+    margin-top:20px;
+}
+.lovaproduct_boxer{
+    font-size:25px;
+    margin-top:20px;
+}
+
+.doituong{
+    padding:20px;
+    border:1px solid black;
+    margin:20px;
+
+
+}
+.doituong legend{
+    font-size:35px;
+    color:rgb(7, 103, 181);
+}
+.doituong_content{
+    font-size:25px;
+}
+
+.muctieu{
+    padding:20px;
+    border:1px solid black;
+    margin:20px;
+
+}
+.muctieu legend{
+    font-size:35px;
+    color:rgb(7, 103, 181);
+}
+.muctieu_content{
+    font-size:25px;
+}
+
+.tranggioithieu{
+    width:100%;
+    padding-top:50px;
+    
+}
+
+.tranggioithieu img{
+    width:100%;
+
+}
