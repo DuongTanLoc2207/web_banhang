@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav"></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><img src="./assets/images/logo.png" alt="Logo"></a></li>
+                <li><a href="product/jean.html">Quần jean</a></li>
+                <li><a href="product/tay.html">Quần tây</a></li>
+                <li><a href="product/short.html">Quần short</a></li>
+                <li><a href="product/jogger.html">Quần jogger</a></li>
+                <li><a href="product/boxer.html">Quần boxer</a></li>
+            </ul>
+            <div class="nav-icon">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="ti-user"></i></a>
+                <a href=""><i class="ti-shopping-cart"></i></a>  
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-cart" >
+        <div class="cart-header">
+            <h2>Giỏ hàng</h2>
+            <span id="item-count"></span>
+        </div>
+        <div class="line"></div>
+        <div class="cart">
+            <div class="cart-item header">
+                <div class="stt">STT</div>
+                <div class="thumbnail">Thumbnail</div>
+                <div class="title">Tiêu Đề</div>
+                <div class="price">Giá</div>
+                <div class="quantity">Số Lượng</div>
+                <div class="total-price">Tổng Giá</div>
+                <div class="actions"></div>
+            </div>
+            <!-- Các dòng dữ liệu giỏ hàng sẽ được thêm vào đây -->
+            <div class="cart-item" id="row_1">
+                <div class="stt">1</div>
+                <div class="thumbnail"><img src="./assets/images/Jean1.webp" alt="Sản phẩm 1"></div>
+                <div class="title">Sản phẩm 1</div>
+                <div class="price" id="price_1" data-price="100000">100,000 VND</div>
+                <div class="quantity">
+                    <button class="btn btn-light" onclick="addMoreCart(1, -1)">-</button>
+                    <input type="text" readonly id="num_1" value="1" class="form-control" onchange="fixCartNum(1)">
+                    <button class="btn btn-light" onclick="addMoreCart(1, 1)">+</button>
+                </div>
+                <div class="total-price" id="total_price_1">100,000 VND</div>
+                <div class="actions"><button class="btn btn-danger" onclick="updateCart(1, 0)">Xoá</button></div>
+            </div>
+            <div class="cart-item" id="row_2">
+                <div class="stt">2</div>
+                <div class="thumbnail"><img src="./assets/images/Jean2.webp" alt="Sản phẩm 2"></div>
+                <div class="title">Sản phẩm 2</div>
+                <div class="price" id="price_2" data-price="200000">200,000 VND</div>
+                <div class="quantity">
+                    <button class="btn btn-light" onclick="addMoreCart(2, -1)">-</button>
+                    <input type="text" readonly id="num_2" value="1" class="form-control" onchange="fixCartNum(2)">
+                    <button class="btn btn-light" onclick="addMoreCart(2, 1)">+</button>
+                </div>
+                <div class="total-price" id="total_price_2">200,000 VND</div>
+                <div class="actions"><button class="btn btn-danger" onclick="updateCart(2, 0)">Xoá</button></div>
+            </div>
+            <div class="cart-item" id="row_3">
+                <div class="stt">3</div>
+                <div class="thumbnail"><img src="./assets/images/Jean3.webp" alt="Sản phẩm 3"></div>
+                <div class="title">Sản phẩm 3</div>
+                <div class="price" id="price_3" data-price="300000">300,000 VND</div>
+                <div class="quantity">
+                    <button class="btn btn-light" onclick="addMoreCart(3, -1)">-</button>
+                    <input type="text" readonly id="num_3" value="1" class="form-control" onchange="fixCartNum(3)">
+                    <button class="btn btn-light" onclick="addMoreCart(3, 1)">+</button>
+                </div>
+                <div class="total-price" id="total_price_3">300,000 VND</div>
+                <div class="actions"><button class="btn btn-danger" onclick="updateCart(3, 0)">Xoá</button></div>
+            </div>
+            
+        </div>
+        <div class="checkout-container">
+            <div class="cart-total">
+                <span>Tổng Tiền:</span>
+                <span id="grand_total">600,000 VND</span>
+            </div>
+            <a href="checkout.php"><button class="btn btn-success">THANH TOÁN</button></a>
+        </div>
+    </div>
+
+    <footer class="footer-trangchu">
+        <h3 >
+            Lưu Tường Văn - 2251120061
+        </h3>
+        <h3>
+            Dương Tấn Lộc - 2251120026
+        </h3>
+    </footer>
+
+    <script src="./assets/js/cart.js"></script>
+</body>
+</html>

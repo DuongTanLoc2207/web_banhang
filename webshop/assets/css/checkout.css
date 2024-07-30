@@ -1,0 +1,245 @@
+.container {
+    margin-top: 150px;
+}
+
+.row {
+    display: flex;
+}
+
+.row-form {
+    padding-left: 50px;
+    flex: 1;
+}
+
+.header-form {
+    color: #333;
+}
+
+.form-control::placeholder {
+    text-align: left;
+}
+
+.container-cart {
+    flex: 1;
+}
+
+.form-group input, .form-group textarea {
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #3a3737;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* CSS cho giỏ hàng */
+.container-cart {
+    width: 80%;
+    margin: auto;
+    margin-right: 50px;
+}
+
+.cart {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    font-size: 15px;
+}
+
+.cart-item.header {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cart-item .stt,
+.cart-item .thumbnail,
+.cart-item .title,
+.cart-item .price,
+.cart-item .quantity,
+.cart-item .total-price {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item .stt {
+    flex-basis: 50px; 
+    flex-grow: 0;
+}
+
+.cart-item .thumbnail img {
+    height: 80px;
+}
+
+.cart-item .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn, .form-control {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-light, .form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #e0dede;
+}
+
+.btn-success {
+    color: white;
+    border: none;
+    float: right;
+    background-color: #001f5d;
+    height: 40px;
+    width: 250px;
+    font-size: 15px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.btn-success:hover {
+    background-color: rgb(32, 32, 139);
+}
+
+.form-control {
+    width: 40px;
+    text-align: center;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*  header, footer */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.top-nav {
+    width: 100%;
+    height: 50px;
+    background-color: #001f5d;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    border-bottom: 1px solid black;
+    padding: 0 20px; 
+}
+
+ul {
+    display: flex;
+    height: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    align-items: center; 
+    flex-grow: 1; 
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    font-size: 25px; 
+    color: #333; 
+    width: 200px; 
+}
+
+.nav-icon a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+li a {
+    color: #333;
+    text-decoration: none;
+    padding: 25px;
+}
+
+img {
+    width: 150px;
+}
+
+
+.footer-trangchu {
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 20px; 
+    background-color:#001f5d; 
+    border-top: 1px solid #ccc; 
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top:100px;
+}
+
+.footer-trangchu h3 {
+    margin: 0; 
+    font-size: 16px; 
+    color: #fff; 
+}
+
+.imggioithieu{
+    width:100%;
+    padding-top:140px;
+    
+}
+
+.imggioithieu img{
+    width:100%;
+
+}
+
+.thongtinlova{
+    
+    margin:20px;
+    margin-top:100px;
+    font-size:25px;
+
+}
+.thongtinlova legend{
+    font-weight: bold;
+    font-size:30px;
+    
+}
+
+.thongtinlova_noidung{
+    margin:50px;
+    margin-top:20px;
+}
