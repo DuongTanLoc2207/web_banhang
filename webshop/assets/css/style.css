@@ -93,6 +93,14 @@ img {
 
 }
 
+.index{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
 .bestseller_jean{
     padding-top:30px;
     padding-left:20px;
@@ -104,6 +112,7 @@ img {
     margin-bottom:30px;
 }
 
+
 .bestseller_tay{
     margin-top:50px;
     padding-left:20px;
@@ -112,6 +121,7 @@ img {
 .bestseller_tay h6{
     margin-bottom:30px;
     font-size:35px;
+    
 }
 
 .bestseller_short{

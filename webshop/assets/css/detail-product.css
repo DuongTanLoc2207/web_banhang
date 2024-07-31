@@ -11,6 +11,7 @@
     width:50%;
     border:1px solid black;
     margin:50px;
+    margin-top:80px;
     
     
 }
@@ -30,9 +31,10 @@
 }
 
 .container_content{
-    margin-top:50px;
+    margin-top:80px;
     margin-left:5px;
     font-size:30px;
+    width:50%;
     
 
 }
@@ -63,7 +65,7 @@
     border:2px dashed red;
     padding:30px;
     margin-left:5px;
-    width:700px
+    width:85%;
     
 }
 .container_font{
@@ -72,8 +74,9 @@
 .container_size{
     border:1px dashed gray;
     padding:10px;
-    width:750px;
+    width:92%;
     font-size:25px;
+    margin-left:5px;
 }
 
 .container_size button:hover{
@@ -102,7 +105,7 @@
 }
 
 .addcart{
-    width:530px;
+    width:60%;
     height:85px;
     font-size:30px;
     display:inline-flex;
@@ -120,12 +123,13 @@
 
 .container_mua{
     display:inline-flex;
-    width:750px;
+    width:93%;
     height:70px;
     border:1px solid auto;
     background-color:#02125c;
     margin:20px;
     font-size:30px;
+    
     
 }
 
@@ -136,13 +140,14 @@
 .container_mua_content{
     
     color:white;
-   padding-left:300px;
+   padding-left:40%;
    padding-top:20px;
 }
 
 .container_detail_doitra{
     font-size:25px;
     padding-top:172px;
+    
    
 }
 .container_detail_doitra_chitiet{
