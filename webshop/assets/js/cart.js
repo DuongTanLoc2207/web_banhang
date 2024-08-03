@@ -1,12 +1,13 @@
 // cart.js
 
 function addMoreCart(id, quantity) {
-    let num = document.getElementById(`num_${id}`);
-    let currentQuantity = parseInt(num.value);
+    const num = document.getElementById(`num_${id}`);
+    let currentQuantity = Number(num.value);
     currentQuantity += quantity;
 
+    // Đảm bảo số lượng không nhỏ hơn 1
     if (currentQuantity < 1) {
-        currentQuantity = 1; // Đảm bảo số lượng không nhỏ hơn 1
+        currentQuantity = 1;
     }
 
     num.value = currentQuantity;
@@ -15,11 +16,12 @@ function addMoreCart(id, quantity) {
 }
 
 function fixCartNum(id) {
-    let num = document.getElementById(`num_${id}`);
-    let currentQuantity = parseInt(num.value);
+    const num = document.getElementById(`num_${id}`);
+    let currentQuantity = Number(num.value);
 
+    // Đảm bảo số lượng không nhỏ hơn 1
     if (isNaN(currentQuantity) || currentQuantity < 1) {
-        currentQuantity = 1; // Đảm bảo số lượng không nhỏ hơn 1
+        currentQuantity = 1;
     }
 
     num.value = currentQuantity;
@@ -28,10 +30,10 @@ function fixCartNum(id) {
 }
 
 function updateCartTotal(id) {
-    let priceElement = document.getElementById(`price_${id}`);
-    let price = parseInt(priceElement.getAttribute('data-price'));
-    let quantity = parseInt(document.getElementById(`num_${id}`).value);
-    let totalPrice = price * quantity;
+    const priceElement = document.getElementById(`price_${id}`);
+    const price = Number(priceElement.getAttribute('data-price'));
+    const quantity = Number(document.getElementById(`num_${id}`).value);
+    const totalPrice = price * quantity;
 
     document.getElementById(`total_price_${id}`).innerText = totalPrice.toLocaleString() + " VND";
 
@@ -41,10 +43,10 @@ function updateCartTotal(id) {
 
 function updateGrandTotal() {
     let grandTotal = 0;
-    let totalElements = document.querySelectorAll('.total-price');
+    const totalElements = document.querySelectorAll('.total-price');
 
     totalElements.forEach(element => {
-        let totalPrice = parseInt(element.innerText.replace(/[^0-9]/g, ''));
+        const totalPrice = Number(element.innerText.replace(/[^0-9]/g, ''));
         if (!isNaN(totalPrice)) {
             grandTotal += totalPrice;
         }
@@ -56,8 +58,10 @@ function updateGrandTotal() {
 function updateCart(id, quantity) {
     if (quantity === 0) {
         // Xoá sản phẩm
-        let row = document.getElementById(`row_${id}`);
-        row.parentNode.removeChild(row);
+        const row = document.getElementById(`row_${id}`);
+        if (row) {
+            row.parentNode.removeChild(row);
+        }
     } else {
         // Cập nhật số lượng
         addMoreCart(id, quantity);
@@ -69,13 +73,20 @@ function updateCart(id, quantity) {
 }
 
 function updateItemCount() {
-    let itemCount = document.querySelectorAll('.cart-item:not(.header)').length;
-    console.log(`Number of items: ${itemCount}`); // Ghi log để kiểm tra
+    let itemCount = 0;
+    const quantityInputs = document.querySelectorAll('.cart-item:not(.header) .form-control');
+
+    // Tính tổng số lượng sản phẩm
+    quantityInputs.forEach(input => {
+        itemCount += Number(input.value);
+    });
+
+    console.log(`Total number of items: ${itemCount}`); // Ghi log để kiểm tra
     document.getElementById('item-count').innerText = `${itemCount} sản phẩm`;
 }
 
 // Gọi hàm updateItemCount khi trang được tải
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     console.log("Page loaded, calling updateItemCount");
     updateItemCount();
 });

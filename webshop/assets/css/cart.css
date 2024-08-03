@@ -1,6 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* CSS cho giỏ hàng */
 .container-cart {
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 150px;
 }
@@ -44,7 +51,7 @@
     font-weight: bold;
 }
 
-.cart-item .stt,
+/* .cart-item .stt, */
 .cart-item .thumbnail,
 .cart-item .title,
 .cart-item .price,
@@ -55,8 +62,14 @@
     text-align: center;
 }
 
+/* .cart-item .stt {
+    flex-basis: 50px; 
+    flex-grow: 0;
+} */
+
 .cart-item .thumbnail img {
-    height: 80px;
+    width: 120px;
+    height: 120px;
 }
 
 .cart-item .quantity {
@@ -121,12 +134,7 @@
 }
 
 
-/*  header, footer */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* Header */
 header {
     position: fixed;
     top: 0;
@@ -146,6 +154,7 @@ nav {
     align-items: center; 
     border-bottom: 1px solid black;
     padding: 0 20px; 
+    background-color: #fff;
 }
 
 ul {
@@ -186,54 +195,27 @@ img {
 }
 
 
+
 .footer-trangchu {
-    display: flex; 
-    justify-content: space-evenly; 
-    align-items: center; 
-    padding: 20px; 
-    background-color:#001f5d; 
-    border-top: 1px solid #ccc; 
-    position: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f5d;
+    border-top: 1px solid #ccc;
+    position: relative; /* Hoặc remove nếu không cần thiết */
     bottom: 0;
     left: 0;
     width: 100%;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 .footer-trangchu h3 {
-    margin: 0; 
-    font-size: 16px; 
-    color: #fff; 
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
 }
 
-.imggioithieu{
-    width:100%;
-    padding-top:140px;
-    
-}
-
-.imggioithieu img{
-    width:100%;
-
-}
-
-.thongtinlova{
-    
-    margin:20px;
-    margin-top:100px;
-    font-size:25px;
-
-}
-.thongtinlova legend{
-    font-weight: bold;
-    font-size:30px;
-    
-}
-
-.thongtinlova_noidung{
-    margin:50px;
-    margin-top:20px;
-}
 
 
 

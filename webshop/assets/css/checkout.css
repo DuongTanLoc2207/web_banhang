@@ -1,3 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     margin-top: 150px;
 }
@@ -7,7 +14,7 @@
 }
 
 .row-form {
-    padding-left: 50px;
+    margin-left: 50px;
     flex: 1;
 }
 
@@ -33,6 +40,54 @@
     background-color: #fff;
     text-align: left;
 }
+
+/* CSS cho phần chọn khu vực giao hàng */
+.radio {
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    width: calc(80% + 22px);
+    
+}
+
+.header-radio {
+    display: inline-block; 
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; 
+    margin-bottom: 15px; 
+    border-bottom: 2px solid #001f5d; 
+    padding-bottom: 5px; 
+}
+
+.radio div {
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+    font-size: 16px; 
+    color: #333; 
+}
+
+.radio input[type="radio"] {
+    margin-right: 10px; 
+    accent-color: #001f5d; 
+}
+
+.radio label {
+    margin-left: 5px; 
+}
+
+
+/* CSS cho hiển thị phí vận chuyển */
+#shipping_fee {
+    font-size: 16px; 
+    font-weight: bold;
+    color: #001f5d; 
+    margin-top: 10px; 
+}
+
 
 /* CSS cho giỏ hàng */
 .container-cart {
@@ -76,7 +131,8 @@
 }
 
 .cart-item .thumbnail img {
-    height: 80px;
+    width: 120px;
+    height: 120px;
 }
 
 .cart-item .quantity {
@@ -131,16 +187,15 @@
 
 
 /*  header, footer */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
+
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000; 
 }
 
 
@@ -155,6 +210,8 @@ nav {
     align-items: center; 
     border-bottom: 1px solid black;
     padding: 0 20px; 
+    background-color: #fff;
+
 }
 
 ul {
@@ -196,50 +253,21 @@ img {
 
 
 .footer-trangchu {
-    display: flex; 
-    justify-content: space-evenly; 
-    align-items: center; 
-    padding: 20px; 
-    background-color:#001f5d; 
-    border-top: 1px solid #ccc; 
-    position: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f5d;
+    border-top: 1px solid #ccc;
+    position: relative; /* Hoặc remove nếu không cần thiết */
     bottom: 0;
     left: 0;
     width: 100%;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 .footer-trangchu h3 {
-    margin: 0; 
-    font-size: 16px; 
-    color: #fff; 
-}
-
-.imggioithieu{
-    width:100%;
-    padding-top:140px;
-    
-}
-
-.imggioithieu img{
-    width:100%;
-
-}
-
-.thongtinlova{
-    
-    margin:20px;
-    margin-top:100px;
-    font-size:25px;
-
-}
-.thongtinlova legend{
-    font-weight: bold;
-    font-size:30px;
-    
-}
-
-.thongtinlova_noidung{
-    margin:50px;
-    margin-top:20px;
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
 }

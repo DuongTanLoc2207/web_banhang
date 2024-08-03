@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checkout</title>
     <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font (2)/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
 </head>
 <body>
     <header>
@@ -46,20 +48,37 @@
                     <div class="form-group">
                         <textarea class="form-control" rows="2" cols="20" name="note" placeholder="Ghi chú"></textarea>
                     </div>
+
+                    <div class="radio">
+                        <label class="header-radio">Khu vực giao hàng</label>
+                        <div>
+                            <input type="radio" id="inner_city" name="delivery_area" value="inner_city" onclick="updateShippingFee()">
+                            <label for="inner_city">Nội thành</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="outer_city" name="delivery_area" value="outer_city" onclick="updateShippingFee()">
+                            <label for="outer_city">Ngoại thành</label>
+                        </div>
+                    </div>
+                    <div id="shipping_fee" class="form-group-">
+                        <!-- Phí vận chuyển sẽ được hiển thị ở đây -->
+                    </div>
+                    
+                    
                 </div>
                 <div class="container-cart">
                     <div class="cart">
                         <div class="cart-item header">
-                            <div class="stt">STT</div>
-                            <div class="thumbnail">Thumbnail</div>
-                            <div class="title">Tiêu Đề</div>
+                            <!-- <div class="stt">STT</div> -->
+                            <div class="thumbnail">Sản Phẩm</div>
+                            <div class="title">Thông tin</div>
                             <div class="price">Giá</div>
                             <div class="quantity">Số Lượng</div>
                             <div class="total-price">Tổng Giá</div>
                         </div>
                         <!-- Các dòng dữ liệu giỏ hàng sẽ được thêm vào đây -->
                         <div class="cart-item" id="row_1">
-                            <div class="stt">1</div>
+                            <!-- <div class="stt">1</div> -->
                             <div class="thumbnail"><img src="./assets/images/Jean1.webp" alt="Sản phẩm 1"></div>
                             <div class="title">Sản phẩm 1</div>
                             <div class="price" id="price_1" data-price="100000">100,000 VND</div>
@@ -69,7 +88,7 @@
                             <div class="total-price" id="total_price_1">100,000 VND</div>
                         </div>
                         <div class="cart-item" id="row_2">
-                            <div class="stt">2</div>
+                            <!-- <div class="stt">2</div> -->
                             <div class="thumbnail"><img src="./assets/images/Jean3.webp" alt="Sản phẩm 2"></div>
                             <div class="title">Sản phẩm 2</div>
                             <div class="price" id="price_2" data-price="200000">200,000 VND</div>
@@ -79,7 +98,7 @@
                             <div class="total-price" id="total_price_2">200,000 VND</div>
                         </div>
                         <div class="cart-item" id="row_3">
-                            <div class="stt">3</div>
+                            <!-- <div class="stt">3</div> -->
                             <div class="thumbnail"><img src="./assets/images/Jean3.webp" alt="Sản phẩm 3"></div>
                             <div class="title">Sản phẩm 3</div>
                             <div class="price" id="price_3" data-price="300000">300,000 VND</div>
