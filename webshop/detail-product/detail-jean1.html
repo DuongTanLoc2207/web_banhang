@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../assets/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
     <link rel="stylesheet" href="../assets/css/products.css">
     <link rel="stylesheet" href="../assets/css/detail-product.css">
+    <script src="../assets/js/detail-product.js"></script>
     
     
 </head>
@@ -41,7 +43,14 @@
    
     <div class="container">
     <div class="container_detail">
-        <img src="../assets/images/Jean1.webp" alt="Quần jean xanh">
+        <div class="slideshow-container">
+            <img class="slide-image" src="../assets/images/Jean1.webp" alt="Quần jean xanh 1">
+            <img class="slide-image" src="../assets/images/Jean1-1.webp" alt="Quần jean xanh 1-1">
+            <img class="slide-image" src="../assets/images/Jean1-2.webp" alt="Quần jean xanh 1-2">
+            <img class="slide-image" src="../assets/images/Jean1-3.webp" alt="Quần jean xanh 1-3">
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
     <div class="container_detail_doitra">Chính sách đổi trả</div><hr>
     <span class="container_detail_doitra_chitiet">
     <div>1/ Áp dụng 1 lần đổi/1 đơn hàng</div><br>
