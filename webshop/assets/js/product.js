@@ -36,4 +36,15 @@ document.addEventListener('DOMContentLoaded', function() {
         imageElement.onload = () => console.log('Initial image loaded successfully.');
         imageElement.onerror = () => console.error('Error loading image: ' + imageElement.src);
     });
+
+    const productContainers = document.querySelectorAll('.jean_product');
+    productContainers.forEach(container => {
+        container.addEventListener('mouseover', () => {
+            container.querySelector('.cart-eye').style.display = 'flex';
+        });
+
+        container.addEventListener('mouseout', () => {
+            container.querySelector('.cart-eye').style.display = 'none';
+        });
+    });
 });
