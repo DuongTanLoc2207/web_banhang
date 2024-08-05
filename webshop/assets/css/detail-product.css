@@ -23,11 +23,29 @@ header {
     padding-top: 0px; 
 }
 
+.container_extra{
+    width:15%;
+    padding-top:80px;
+   padding-left:40px;
+    margin:10px;
+    display:block;
+    height:650px;
+}
+
+.img-detail {
+    cursor: pointer;
+}
+
+.img-detail.selected {
+    border: 2px solid black;
+}
+
+
+
+
 .container_detail {
-    width: 50%;
-    border: 1px solid black;
+    width: 45%;
     height:680px;
-    margin: 50px;
     margin-top: 80px;
 }
 
@@ -87,10 +105,11 @@ header {
 }
 
 .container_content {
+    width:50%;
     margin-top: 80px;
     margin-left: 5px;
     font-size: 30px;
-    width: 50%;
+    
 }
 
 .container_content p {
@@ -116,29 +135,50 @@ header {
 }
 
 .container_sales {
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 5px;
     border: 2px dashed red;
-    padding: 30px;
+    padding: 20px;
     margin-left: 5px;
     width: 85%;
 }
 
-.container_font {
+.container_fontsize {
     font-size: 20px;
 }
 
 .container_size {
     border: 1px dashed gray;
     padding: 10px;
-    width: 92%;
-    font-size: 25px;
+    width: 89%;
+    font-size: 22px;
     margin-left: 5px;
+    
 }
+
+.size-button {
+    border: 2px solid rgb(4, 3, 3);
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius:20%;
+}
+
+.size-button.selected {
+    border-color:black;
+    background-color: #04055c;
+    color: white;
+}
+
+
 
 .container_size button:hover {
     background-color: #02125c;
     color: white;
+    cursor: pointer;
 }
 
 .container_content button {
@@ -148,27 +188,30 @@ header {
     background-color: white;
 }
 
+
 .container_soluong {
     color: rgb(5, 5, 79);
     border-radius: 10%;
     display: inline-flex;
     width: 50px;
-    height: 50px;
+    height: 30px;
     padding: 10px;
     padding-left: 20px;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top:30px;
 }
 
 .addcart {
-    width: 60%;
-    height: 85px;
-    font-size: 30px;
+    width: 57%;
+    height: 60px;
+    font-size: 25px;
     display: inline-flex;
     margin-left: 20px;
     border-radius: 5%;
     color: #2F80ED;
     background-color: white;
     cursor: pointer;
+    margin-top:0;
 }
 
 .addcart:hover {
@@ -178,12 +221,14 @@ header {
 
 .container_mua {
     display: inline-flex;
-    width: 93%;
-    height: 70px;
+    width: 91%;
+    height: 60px;
     border: 1px solid auto;
     background-color: #02125c;
-    margin: 20px;
+    margin: 18px;
     font-size: 30px;
+    padding-top:0px;
+    border-radius:5%;
 }
 
 .container_mua:hover {
@@ -193,12 +238,13 @@ header {
 .container_mua_content {
     color: white;
     padding-left: 40%;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .container_detail_doitra {
     font-size: 25px;
-    padding-top: 172px;
+    padding-top: 90px;
+    padding-left:0px;
 }
 
 .container_detail_doitra_chitiet {
@@ -216,17 +262,69 @@ header {
     height: 450px;
 }
 
-.product_same {
-    font-size: 35px;
-    display: flex;
-    padding: 50px;
-    padding-top: 600px;
+.under_product{
+    display:flex;
+    margin:50px;
+    width:90%;
+    height:400px;
+    font-size:20px;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:20px;
+    border:1px solid black;
+    padding:5%;
+    padding-left:2%;
+    padding-bottom:13%;
+}
+.under_product_noidung h7{
+    font-size:25px;
+    font-weight:bold;
+   margin-left:30px;
+}
+.under_product_noidung{
+    width:100%;
+    margin-right:100px;
+    
+}
+.under_product_bangsize{
+    width:100%;
+    margin-right:50px;
+    margin-left:20px;
+
+}
+.under_product_bangsize img{
+    width:120%;
+    
+}
+.under_product_bangsize h7{
+    font-size:25px;
+    font-weight:bold;
+    margin-left:30px;
+    
 }
 
 .lovastore {
     text-decoration: none;
 }
 
-.lovastore:hover {
-    font-size: 30px;
+
+
+.footer_product_detail{
+    padding: 20px; 
+    background-color:#001f5d; 
+    border-top: 1px solid #ccc; 
+    position:static;
+    bottom: 0;
+    left: 0;
+    font-size:20px;
+    color:white;
+    align-items: left;
+    margin-top:50px;
+    width:100%;
+   
+
+}
+.footer_product_detail div{
+    text-align: start;
+    color:white;
 }
