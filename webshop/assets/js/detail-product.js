@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.slide-image');
     const thumbnails = document.querySelectorAll('.img-detail');
+    const sizeButtons = document.querySelectorAll('.size-button');
     let currentSlide = 0;
     let currentThumbnail = null;
 
@@ -8,6 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
         slides.forEach((slide, i) => {
             slide.style.opacity = i === index ? '1' : '0';
         });
+
+        // Update the border of the corresponding thumbnail
+        if (currentThumbnail) {
+            currentThumbnail.classList.remove('selected');
+        }
+        thumbnails[index].classList.add('selected');
+        currentThumbnail = thumbnails[index];
     }
 
     function nextSlide() {
@@ -50,14 +58,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleSizeButtonClick(event) {
         const selectedButton = event.currentTarget;
-        document.querySelectorAll('.size-button').forEach(button => {
+        sizeButtons.forEach(button => {
             button.classList.remove('selected');
         });
         selectedButton.classList.add('selected');
         selectSize(selectedButton.getAttribute('data-size'));
     }
 
-    document.querySelectorAll('.size-button').forEach(button => {
+    sizeButtons.forEach(button => {
         button.addEventListener('click', handleSizeButtonClick);
     });
+
+    // Automatically select size 28
+    const defaultSizeButton = document.querySelector('.size-button[data-size="28"]');
+    if (defaultSizeButton) {
+        defaultSizeButton.click();
+    }
 });

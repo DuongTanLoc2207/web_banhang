@@ -20,7 +20,8 @@ header {
     margin: 0;
     padding: 0;
     height: 800px;
-    padding-top: 0px; 
+    padding-left:20px;
+    
 }
 
 .container_extra{
@@ -29,7 +30,11 @@ header {
    padding-left:40px;
     margin:10px;
     display:block;
-    height:650px;
+    height:680px;
+}
+
+.container_extra img{
+    height:160px;
 }
 
 .img-detail {
@@ -156,6 +161,10 @@ header {
     
 }
 
+.container_size ul{
+    background-color:white;
+}
+
 .size-button {
     border: 2px solid rgb(4, 3, 3);
     background-color: #f0f0f0;
@@ -279,12 +288,24 @@ header {
 .under_product_noidung h7{
     font-size:25px;
     font-weight:bold;
-   margin-left:30px;
+   padding-left:130px;
 }
 .under_product_noidung{
     width:100%;
     margin-right:100px;
     
+}
+
+.mota{
+    border:2px dashed rgb(34, 131, 191);
+    padding:30px;
+    margin-top:30px;
+}
+
+.mota h7{
+    padding-left:100px;
+    margin-bottom:20px;
+
 }
 .under_product_bangsize{
     width:100%;

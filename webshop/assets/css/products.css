@@ -1,6 +1,6 @@
 .underheader {
     position: fixed;
-    top: 65px; /* Điều chỉnh giá trị này khớp với chiều cao thực tế của header */
+    top: 65px; 
     left: 0;
     width: 100%;
     background-color: #f8f8f8;
@@ -8,14 +8,24 @@
     align-items: center;
     gap: 10px;
     margin: 0;
-    padding: 0;
     height: 40px;
     z-index: 999;
     
+    
+}
+
+.underheader_content{
+    padding:0px 30px;
 }
 .underheader a {
     text-decoration: none;
     color: #2F80ED;
+    margin:5px;
+    
+}
+
+.mauxanhdam{
+    color:#001f5d;
 }
 .slick_slider {
     width: 100%;

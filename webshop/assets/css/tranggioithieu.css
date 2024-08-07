@@ -101,3 +101,27 @@ body{
     margin-top:0px;
 
 }
+
+.duoi{
+    position: fixed;
+    top: 65px; 
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    height: 40px;
+    z-index: 999;
+}
+
+.duoi_content{
+    padding:30px;
+}
+.duoi a {
+    text-decoration: none;
+    color: #2F80ED;
+    margin:5px;
+    
+}
