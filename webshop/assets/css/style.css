@@ -6,12 +6,16 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+
+nav img{
+    width:100px;
+    border-radius:50%; 
+    margin-left:80px;
+    margin-right:50px;
+    
 }
+
 
 
 .top-nav {
@@ -25,17 +29,18 @@ nav {
     align-items: center; 
     border-bottom: 1px solid black;
     padding: 0 20px; 
-    background-color: #fff;
+    background-color:#001f5d;
+
 }
 
 ul {
     display: flex;
-    height: 60px;
+    height: 65px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
+    background-color:#001f5d;
     align-items: center; 
     flex-grow: 1; 
 }
@@ -51,12 +56,12 @@ ul {
 
 .nav-icon a {
     text-decoration: none;
-    color: #333;
+    color: #fcfcfc;
 }
 
 
 li a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     padding: 25px;
 }
@@ -66,29 +71,62 @@ img {
 }
 
 
-.footer-trangchu {
+footer {
     display: flex; 
-    justify-content: space-evenly; 
-    align-items: center; 
+    height:230px;
     padding: 20px; 
     background-color:#001f5d; 
     border-top: 1px solid #ccc; 
-    position: flex;
+  
     bottom: 0;
     left: 0;
     width: 100%;
     margin-top:100px;
+    color:white;
+    font-size:25px;
+
+}
+.diachi img{
+    border-radius:50%;
+    margin-left:70px;
+    margin-top:30px;
 }
 
-.footer-trangchu h3 {
-    margin: 0; 
-    font-size: 16px; 
-    color: #fff; 
+.diachi{
+    padding-left:50px;
+    width:35%;
+    
 }
+
+.fanpage{
+    width:30%;
+    margin-left:30px;
+}
+
+.fanpage img{
+    border-radius:50%;
+    height:130px;
+    margin-top:50px;
+    margin-left:50px;
+    
+}
+
+.zalo{
+    width:30%;
+    margin-left:30px;
+    padding-right:30px;
+}
+
+.zalo img{
+    margin-top:30px;
+    margin-left:45px;
+}
+
+
 
 .imggioithieu{
     width:100%;
-    padding-top:80px;
+    padding-top:50px;
     
 }
 
@@ -106,7 +144,7 @@ img {
 }
 
 .bestseller_jean{
-    margin-top:20px;
+    margin-top:0px;
     padding-left:20px;
     
 }
@@ -118,7 +156,7 @@ img {
 
 
 .bestseller_tay{
-    margin-top:50px;
+    margin-top:10px;
     padding-left:20px;
 }
 
@@ -159,23 +197,7 @@ img {
 }
 
 
-.thongtinlova{
-    
-    margin:20px;
-    margin-top:100px;
-    font-size:25px;
 
-}
-.thongtinlova legend{
-    font-weight: bold;
-    font-size:30px;
-    
-}
-
-.thongtinlova_noidung{
-    margin:50px;
-    margin-top:20px;
-}
 
 
 

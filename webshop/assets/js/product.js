@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentImageIndex = (currentImageIndex + 1) % imageSources.length;
                 imageElement.src = imageSources[currentImageIndex];
                 console.log('Image changed to: ' + imageSources[currentImageIndex]); // Thông báo đường dẫn ảnh mới
-            }, 2000); // 2 giây
+            }, 1200); // 2 giây
         }
 
         function stopImageRotation() {
