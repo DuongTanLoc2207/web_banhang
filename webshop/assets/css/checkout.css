@@ -284,16 +284,6 @@ button:hover {
 
 
 /*  header, footer */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-
-
 header {
     position: fixed;
     top: 0;
@@ -440,65 +430,30 @@ footer {
 
 }
 
-.index{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.underheader {
+    position: absolute;
+    top: 65px; 
+    left: 0;
+    width: 100%;
+    background-color:#faf7f7;
+    height: 50px;
+    z-index: 999;
+} 
+
+.underheader_content{
+    margin: 16px 50px;
+}
+
+.underheader a {
+    text-decoration: none;
+    color: #2F80ED;
+    margin:5px;
     
+} 
 
-}
-
-.bestseller_jean{
-    margin-top:0px;
-    padding-left:20px;
-    
-}
-.bestseller_jean h6{
-
-    font-size:35px;
-    margin-bottom:20px;
-}
-
-
-.bestseller_tay{
-    margin-top:10px;
-    padding-left:20px;
-}
-
-.bestseller_tay h6{
-    margin-bottom:30px;
-    font-size:35px;
-    
-}
-
-.bestseller_short{
-    margin-top:80px;
-    padding-left:20px;
-}
-
-.bestseller_short h6{
-    margin-bottom:30px;
-    font-size:35px;
-}
-
-.bestseller_jogger{
-    margin-top:80px;
-    padding-left:20px;
-}
-
-.bestseller_jogger h6{
-    margin-bottom:30px;
-    font-size:35px;
-}
-
-.bestseller_boxer{
-    margin-top:80px;
-    padding-left:20px;
-}
-
-.bestseller_boxer h6{
-    margin-bottom:30px;
-    font-size:35px;
+.font-bold{
+    font-weight:bold;
 }
 
 
