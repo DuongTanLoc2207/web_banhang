@@ -7,128 +7,149 @@
     <link rel="stylesheet" href="./assets/css/checkout.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font (2)/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
         <div class="top-nav"></div>
         <nav class="nav">
             <ul>
-                <li><a href="./index.html"><img src="./assets/images/logo.png" alt="Logo"></a></li>
-                <li><a href="product/jean.html">Quần jean</a></li>
-                <li><a href="product/tay.html">Quần tây</a></li>
-                <li><a href="product/short.html">Quần short</a></li>
-                <li><a href="product/jogger.html">Quần jogger</a></li>
-                <li><a href="product/boxer.html">Quần boxer</a></li>
+                <li><a href="../index.html"><img src="../assets/images/logo.png" alt="Logo"></a></li>
+                <li><a href="jean.html">Quần jean</a></li>
+                <li><a href="tay.html">Quần tây</a></li>
+                <li><a href="short.html">Quần short</a></li>
+                <li><a href="jogger.html">Quần jogger</a></li>
+                <li><a href="boxer.html">Quần boxer</a></li>
             </ul>
             <div class="nav-icon">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="./admin/auth/login.html"><i class="ti-user"></i></a>
-                <a href=""><i class="ti-shopping-cart"></i></a>  
+                <a href="./cart.html"><i class="bi bi-cart3"></i></i></a>  
             </div>
         </nav>
     </header>
+    <br><br> <br><br>
+    <div class="underheader"><br>
+    <a href="../index.html">Trang chủ</a>
+    <a href="tay.html">/Quần Tây</a>
 
     <div class="container">
-        <form method="post" onsubmit="return completeCheckout();">
+        <form method="post" onsubmit="return completeCheckout();"  autocomplete="off">
             <div class="row">
-                <div class=row-form>
-                    <h2 class="header-form">Thông tin giao hàng</h2> 
+                <div class="row-form">
+                    <h2 class="header-form">Thông tin giao hàng</h2>
                     <div class="form-group">
                         <input required="true" type="text" class="form-control" id="usr" name="fullname" placeholder="Họ và tên">
+                        <div class="error-message" id="fullnameError"></div>
                     </div>
                     <div class="form-group">
                         <input required="true" type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        <div class="error-message" id="emailError"></div>
                     </div>
                     <div class="form-group">
                         <input required="true" type="tel" class="form-control" id="phone" name="phone" placeholder="Số điện thoại">
+                        <div class="error-message" id="phoneError"></div>
                     </div>
                     <div class="form-group">
-                        <input required="true" type="text" class="form-control" id="address" name="address" placeholder="Địa chỉ">
+                        <input required="true" type="text" class="form-control" id="address-receive" name="address" placeholder="Địa chỉ nhận hàng">
+                        <div class="error-message" id="addressError"></div>
+                    </div>
+                    <div class="form-group">
+                        <input required="true" type="text" class="form-control" id="address-pay" name="addressPay" placeholder="Địa chỉ thanh toán">
+                        <div class="error-message" id="addressPayError"></div>
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" rows="2" cols="20" name="note" placeholder="Ghi chú"></textarea>
                     </div>
 
-                    <div class="radio">
-                        <label class="header-radio">Khu vực giao hàng</label>
-                        <div>
-                            <input type="radio" id="inner_city" name="delivery_area" value="inner_city" onclick="updateShippingFee()">
-                            <label for="inner_city">Nội thành</label>
+                    <div class="content-box">
+                        <h3 class="content-box-header">Phương thức thanh toán</h3>
+                        <div class="radio-wrapper content-box-row">
+                            <label class="radio-label">
+                                <div class="radio-input payment-method-checkbox">
+                                    <input type-id="1" id="payment_method_id_1000693665" class="input-radio" name="payment_method_id" type="radio" value="1000693665">
+                                </div>
+                                <div class="radio-content-input">
+                                    <img class="main-img" src="https://hstatic.net/0/0/global/design/seller/image/payment/cod.svg?v=6">
+                                    <div>
+                                        <span class="radio-label-primary">Thanh toán khi giao hàng (COD)</span>
+                                        <span class="quick-tagline hidden"></span>
+                                    </div>
+                                </div>
+                            </label>
                         </div>
-                        <div>
-                            <input type="radio" id="outer_city" name="delivery_area" value="outer_city" onclick="updateShippingFee()">
-                            <label for="outer_city">Ngoại thành</label>
+                        <div class="radio-wrapper content-box-row-secondary" for="payment_method_id_1000693665">
+                            <div class="blank-slate">
+                                - Khách hàng được kiểm tra hàng trước khi nhận hàng.<br>
+                                - Freeship đơn từ 399K
+                            </div>
                         </div>
+            
+                        <div class="radio-wrapper content-box-row">
+                            <label class="radio-label" for="payment_method_id_1002134252">
+                                <div class="radio-input payment-method-checkbox">
+                                    <input type-id="2" id="payment_method_id_1002134252" class="input-radio" name="payment_method_id" type="radio" value="1002134252">
+                                </div>
+                                <div class="radio-content-input">
+                                    <img class="main-img" src="https://hstatic.net/0/0/global/design/seller/image/payment/other.svg?v=6">
+                                    <div>
+                                        <span class="radio-label-primary">Chuyển khoản qua ngân hàng</span>
+                                        <span class="quick-tagline hidden"></span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio-wrapper content-box-row-secondary hidden" for="payment_method_id_1002134252">
+                            <div class="blank-slate">
+                                * Quý khách vui lòng thanh toán qua tài khoản:<br>
+                                - Chủ tài khoản: CTY CP ICON AND DENIM<br>
+                                - Tài khoản số: 4314767<br>
+                                - Mở tại ngân hàng: Á Châu ACB - CN Nguyễn Biểu<br>
+                                * NV CSKH sẽ gọi điện thoại xác nhận với khách hàng sau khi khách hàng đặt hàng.
+                            </div>
+                        </div>
+                        <div class="error-message" id="paymentMethodError"></div>
                     </div>
-                    <div id="shipping_fee" class="form-group-">
-                        <!-- Phí vận chuyển sẽ được hiển thị ở đây -->
-                    </div>
-                    
-                    
                 </div>
                 <div class="container-cart">
                     <div class="cart">
-                        <div class="cart-item header">
-                            <!-- <div class="stt">STT</div> -->
-                            <div class="thumbnail">Sản Phẩm</div>
-                            <div class="title">Thông tin</div>
-                            <div class="price">Giá</div>
-                            <div class="quantity">Số Lượng</div>
-                            <div class="total-price">Tổng Giá</div>
-                        </div>
-                        <!-- Các dòng dữ liệu giỏ hàng sẽ được thêm vào đây -->
-                        <div class="cart-item" id="row_1">
-                            <!-- <div class="stt">1</div> -->
-                            <div class="thumbnail"><img src="./assets/images/Jean1.webp" alt="Sản phẩm 1"></div>
-                            <div class="title">Sản phẩm 1</div>
-                            <div class="price" id="price_1" data-price="100000">100,000 VND</div>
-                            <div class="quantity">
-                                <input type="text" readonly id="num_1" value="1" class="form-control" onchange="fixCartNum(1)">
-                            </div>
-                            <div class="total-price" id="total_price_1">100,000 VND</div>
-                        </div>
-                        <div class="cart-item" id="row_2">
-                            <!-- <div class="stt">2</div> -->
-                            <div class="thumbnail"><img src="./assets/images/Jean3.webp" alt="Sản phẩm 2"></div>
-                            <div class="title">Sản phẩm 2</div>
-                            <div class="price" id="price_2" data-price="200000">200,000 VND</div>
-                            <div class="quantity">
-                                <input type="text" readonly id="num_2" value="1" class="form-control" onchange="fixCartNum(2)">
-                            </div>
-                            <div class="total-price" id="total_price_2">200,000 VND</div>
-                        </div>
-                        <div class="cart-item" id="row_3">
-                            <!-- <div class="stt">3</div> -->
-                            <div class="thumbnail"><img src="./assets/images/Jean3.webp" alt="Sản phẩm 3"></div>
-                            <div class="title">Sản phẩm 3</div>
-                            <div class="price" id="price_3" data-price="300000">300,000 VND</div>
-                            <div class="quantity">
-                                <input type="text" readonly id="num_3" value="1" class="form-control" onchange="fixCartNum(3)">
-                            </div>
-                            <div class="total-price" id="total_price_3">300,000 VND</div>
-                        </div>
-                        
-                        <!-- Thêm các dòng sản phẩm giả lập khác tại đây -->
                     </div>
                     <div class="checkout-container">
                         <div class="cart-total">
                             <span>Tổng Tiền:</span>
-                            <span id="grand_total">600,000 VND</span>
+                            <span id="grand_total"></span>
                         </div>
-                        <a href="checkout.php"><button class="btn btn-success">THANH TOÁN</button></a>
+                        <button class="btn btn-success" onclick="completeCheckout()">THANH TOÁN</button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
 
-    <footer class="footer-trangchu">
-        <h3 >
-            Lưu Tường Văn - 2251120061
-        </h3>
-        <h3>
-            Dương Tấn Lộc - 2251120026
-        </h3>
+    <!-- Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thanh toán thành công!</h2>
+            <p>Cảm ơn bạn đã mua sắm tại cửa hàng của chúng tôi. Đơn hàng của bạn sẽ sớm được gửi đi.</p>
+            <button id="okBtn">Tiếp tục mua hàng</button>
+        </div>
+    </div>
+
+
+    <footer >
+        <div class="diachi">
+            <div>Địa chỉ cửa hàng: Trường đại học Giao Thông Vận Tải </div>
+        <a href="https://maps.app.goo.gl/EEbwVt7azQqeW35a8?g_st=ic" target=_blank><img src="assets/images/Diachi.jpg" alt="Địa chỉ"></a></div>
+
+        <div class="zalo">
+            <div>Chăm sóc khách hàng: 0931167255</div>
+            <img src="assets/images/QR.jpg">
+        </div>
+
+       <div class="fanpage">
+            <div>Fanpage: LoVa Store </div>
+            <a href="https://www.facebook.com/16072004xx/" target="_blank"><img src="assets/images/Fanpage.jpg"></a>
+        </div>
     </footer>
     <script src="./assets/js/checkout.js"></script>
 </body>
