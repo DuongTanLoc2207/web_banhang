@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/products.css">
     <link rel="stylesheet" href="./assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/modal-product.css">
+
 </head>
 <body>
     <header>
@@ -22,7 +24,7 @@
                 <li><a href="product/short.html">Quần short</a></li>
                 <li><a href="product/jogger.html">Quần jogger</a></li>
                 <li><a href="product/boxer.html">Quần boxer</a></li>
-                <li><a href="tranggioithieu.html" target="_blank">Giới thiệu LoVa</a></li>
+                <li><a href="tranggioithieu.html" target="_blank">Giới thiệu LoVa Store</a></li>
             </ul>
             <div class="nav-icon">
                 <a href="./cart.html"><i class="ti-shopping-cart"></i></a>  
@@ -31,12 +33,346 @@
             </div>
         </nav>
     </header>
-    <div class="duoi">
-        <div class="duoi_content">
-        <a href="../index.html">Trang chủ</a>
-        <a href="jean.html">/ <b>Quần jean</b></a>
+
+    <div class="imggioithieu">
+        <img src="assets/images/AnhGioiThieu.jpg" alt="Ảnh giới thiệu LovaStore">
     </div>
+
+    <div class="bestseller_jean">
+        <h6>Sản phẩm jeans bán chạy </h6><hr>
+        <wrapper class="jean_slick">
+            <div class="jean_product">
+                <div class="jean_product_image">
+                    <a href="detail-product/detail-jean1.html"><img class="product-image" data-product-name="Jean1" src="assets/images/Jean1.webp" alt="Sản phẩm 1"></a>
+                </div>
+                <div class="cart-eye">
+                    <i class="bi bi-cart-plus-fill"></i>
+                    <i id = "myBtn" class="bi bi-eye"></i>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="container-modal">
+                        <div class="container_modal_anh">
+                            <img src="assets/images/Jean1" alt="">
+
+                        </div>
+                        <div class="container_modal_content">
+                            <div>Quần Jean Nam Xanh Trơn</div>
+                            <div> Mã: LoVa12345678</div>
+                            <div> Giá: 550,000đ</div>
+                            <div >Size </div>
+                            <button name="28" type="button" class="size-button" data-size="28">28</button>
+                            <button name="28" type="button" class="size-button" data-size="28">28</button>
+                            <button name="28" type="button" class="size-button" data-size="28">28</button>
+                            <button name="28" type="button" class="size-button" data-size="28">28</button>
+                            <button name="28" type="button" class="size-button" data-size="28">28</button>
+                        </div>
+                        <div><input type="number" value="1" min="1" step="1"><button name="themvaogio" type="button">Thêm vào giỏ </button></div>
+                    </div>
+                </div>
+                <div class="jean_product_content">
+                    <div><a href="detail-product/detail-jean1.html">Quần Jean Xanh Trơn</a></div>
+                    <span class="jean_product_content_price">550,000</span><span class="gachchan">đ</span><br>
+                </div>
+            </div>
+
+            <div class="jean_product">
+                <div class="jean_product_image">
+                    <a href="detail-product/detail-jean2.html"><img class="product-image" data-product-name="Jean2" src="assets/images/Jean2.webp" alt="Sản phẩm 1"></a>
+                </div>
+                <div class="cart-eye">
+                    <i class="bi bi-cart-plus-fill"></i>
+                    <a href="detail-product/detail-jean2.html"><i class="bi bi-eye"></i></a>
+                </div>
+                <div class="jean_product_content">
+                    <div><a href="detail-product/detail-jean2.html">Quần Jean Xanh Trơn</a></div>
+                    <span class="jean_product_content_price">550,000</span><span class="gachchan">đ</span><br>
+                </div>
+            </div>
+
+            <div class="jean_product">
+                <div class="jean_product_image">
+                    <a href="detail-product/detail-jean1.html"><img class="product-image" data-product-name="Jean1" src="assets/images/Jean1.webp" alt="Sản phẩm 1"></a>
+                </div>
+                <div class="cart-eye">
+                    <i class="bi bi-cart-plus-fill"></i>
+                    <a href="detail-product/detail-jean1.html"><i class="bi bi-eye"></i></a>
+                </div>
+                <div class="jean_product_content">
+                    <div><a href="detail-product/detail-jean1.html">Quần Jean Xanh Trơn</a></div>
+                    <span class="jean_product_content_price">550,000</span><span class="gachchan">đ</span><br>
+                </div>
+            </div>
+
+            <div class="jean_product">
+                <div class="jean_product_image">
+                    <a href="detail-product/detail-jean1.html"><img class="product-image" data-product-name="Jean1" src="assets/images/Jean1.webp" alt="Sản phẩm 1"></a>
+                </div>
+                <div class="cart-eye">
+                    <i class="bi bi-cart-plus-fill"></i>
+                    <a href="detail-product/detail-jean1.html"><i class="bi bi-eye"></i></a>
+                </div>
+                <div class="jean_product_content">
+                    <div><a href="detail-product/detail-jean1.html">Quần Jean Xanh Trơn</a></div>
+                    <span class="jean_product_content_price">550,000</span><span class="gachchan">đ</span><br>
+                </div>
+            </div>
+        </wrapper>
     </div>
-  
+
+<div class="bestseller_tay">
+    <h6>Sản phẩm quần tây bán chạy</h6><hr>
+    <wrapper class="jean_slick">
+        <div class="jean_product">
+            <div class="jean_product_image">
+                <a href="detail-product/detail-tay1.html"><img src="assets/images/Tay1.webp" alt="Sản phẩm 1"></a>
+            </div>
+            <div class="jean_product_content">
+                <div><a href="detail-product/detail-tay1.html">Quần Tây</div></a>
+                <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                </div>
+              
+            </div>
+
+            <div class="jean_product">
+                <div class="jean_product_image">
+                    <a href="detail-product/detail-tay2.html"><img src="assets/images/Tay2.webp" alt="Sản phẩm 1"></a>
+                </div>
+                <div class="jean_product_content">
+                    <div><a href="detail-product/detail-tay2.html">Quần Tây</div></a>
+                    <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                    </div>
+                  
+                </div>
+
+                <div class="jean_product">
+            <div class="jean_product_image">
+                <a href="detail-product/detail-tay5.html"><img src="assets/images/Tay5.webp" alt="Sản phẩm 1"></a>
+            </div>
+            <div class="jean_product_content">
+                <div><a href="detail-product/detail-tay5.html">Quần Tây</div></a>
+                <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                </div>
+              
+            </div>
+
+            <div class="jean_product">
+                <div class="jean_product_image">
+                    <a href="detail-product/detail-tay8.html"><img src="assets/images/Tay8.webp" alt="Sản phẩm 1"></a>
+                </div>
+                <div class="jean_product_content">
+                    <div><a href="detail-product/detail-tay8.html">Quần Tây</div></a>
+                    <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                    </div>
+                  
+                </div>
+    </wrapper>
+        </div>
+
+        <div class="bestseller_short">
+            <h6>Sản phẩm quần short bán chạy</h6><hr>
+            <wrapper class="jean_slick">
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-short1.html"><img src="assets/images/Short1.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-short1.html">Quần Short</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-short2.html"><img src="assets/images/Short2.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-short2.html">Quần Short</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-short3.html"><img src="assets/images/Short3.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-short3.html">Quần Short</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-short4.html"><img src="assets/images/Short4.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-short4.html">Quần Short</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                        </div>
+                    </div>
+            </wrapper>
+
+        </div>
+
+        <div class="bestseller_jogger">
+            <h6>Sản phẩm quần jogger bán chạy</h6><hr>
+            <wrapper class="jean_slick">
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-jogger1.html"><img src="assets/images/Jogger1.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-jogger1.html">Quần Jogger</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-jogger2.html"><img src="assets/images/Jogger2.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-jogger2.html">Quần Jogger</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                      
+                        </div>
+                      
+                    </div>
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-jogger3.html"><img src="assets/images/Jogger3.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-jogger3.html">Quần Jogger</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-jogger6.html"><img src="assets/images/Jogger6.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-jogger6.html">Quần Jogger</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                
+                        </div>
+                      
+                    </div>
+            </wrapper>
+        </div>
+
+        <div class="bestseller_boxer">
+            <h6>Sản phẩm quần boxer bán chạy</h6><hr>
+            <wrapper class="jean_slick">
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-boxer1.html"><img src="assets/images/boxer1.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-boxer1.html">Quần Boxer</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                       
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-boxer2.html"><img src="assets/images/boxer2.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-boxer2.html">Quần Boxer</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                       
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-boxer3.html"><img src="assets/images/boxer3.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-boxer3.html">Quần Boxer</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                       
+                        </div>
+                      
+                    </div>
+
+                <div class="jean_product">
+                    <div class="jean_product_image">
+                        <a href="detail-product/detail-boxer4.html"><img src="assets/images/boxer4.webp" alt="Sản phẩm 1"></a>
+                    </div>
+                    <div class="jean_product_content">
+                        <div><a href="detail-product/detail-boxer4.html">Quần Boxer</div></a>
+                        <span class="jean_product_content_price" >400,000</span><span class="gachchan">đ</span><br><br>
+                     
+                        </div>
+                      
+                    </div>
+            </wrapper>
+        </div>
+
+    
+
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-image-slider">
+                    <img src="assets/images/Jean1.webp" alt="Product Image" class="slide-image" style="opacity: 1;">
+                    <img src="assets/images/Jean2.webp" alt="Product Image" class="slide-image" style="opacity: 0;">
+                    <!-- Thêm các ảnh khác nếu cần -->
+                </div>
+                <div class="modal-details">
+                    <h2 class="product-name">Tên sản phẩm</h2>
+                    <p class="product-price">Giá: 550,000 đ</p>
+                    <div class="product-size">
+                        <label>Size:</label>
+                        <button class="size-button" data-size="28">28</button>
+                        <button class="size-button" data-size="30">30</button>
+                        <button class="size-button" data-size="32">32</button>
+                        <!-- Thêm các size khác nếu cần -->
+                    </div>
+                    <div class="product-quantity">
+                        <label>Số lượng:</label>
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="modal-controls">
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    <footer >
+        <div class="diachi">
+            <div>Địa chỉ cửa hàng: Trường đại học Giao Thông Vận Tải </div>
+        <a href="https://maps.app.goo.gl/EEbwVt7azQqeW35a8?g_st=ic" target=_blank><img src="assets/images/Diachi.jpg" alt="Địa chỉ"></a></div>
+
+        <div class="zalo">
+            <div>Chăm sóc khách hàng: 0931167255</div>
+            <img src="assets/images/QR.jpg">
+        </div>
+
+       <div class="fanpage">
+            <div>Fanpage: LoVa Store </div>
+            <a href="https://www.facebook.com/16072004xx/" target="_blank"><img src="assets/images/Fanpage.jpg"></a>
+    </div>
+   
+        
+    </footer>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/modal-product.js"></script>
 </body>
 </html>
