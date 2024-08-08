@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Automatically select size 28
-    const defaultSizeButton = document.querySelector('.size-button[data-size="28"]');
+    const defaultSizeButton = document.querySelector('.size-button[data-size="29"]');
     if (defaultSizeButton) {
         defaultSizeButton.click();
     }

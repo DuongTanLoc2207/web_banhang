@@ -9,10 +9,10 @@ header {
 
 .underheader {
     position: fixed;
-    top: 90px; 
+    top: 65px; 
     z-index: 999;
     background-color: rgb(250, 247, 247);
-    padding:5px 0; 
+    padding:5px 20px; 
 }
 
 .container {
@@ -21,6 +21,7 @@ header {
     padding: 0;
     height: 700px;
     padding-left:20px;
+    margin-top:60px;
     
 }
 
@@ -31,11 +32,11 @@ header {
     margin:10px;
     margin-right:30px;
     display:block;
-    height:580px;
+    height:590px;
 }
 
 .container_extra img{
-    height:139px;
+    height:141px;
 }
 
 .img-detail {
@@ -47,30 +48,28 @@ header {
 }
 
 
-
-
 .container_detail {
-    width: 45%;
-    height:580px;
+    width: 40%;
+    height:595px;
     margin-top: 80px;
 }
 
 .container_detail img {
-    width: 100%;
-    height: 580px;
+    width: 95%;
+    height: 595px;
 }
 
 .slideshow-container {
     position: relative;
-    width: 100%;
-    height: 580px;
+    width: 95%;
+    height: 595px;
     overflow: hidden;
     max-width: 100%;
 }
 
 .slide-image {
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 100%;
     object-fit: cover;
     opacity: 0;
@@ -124,7 +123,7 @@ header {
     font-size: 15px;
     margin-top: 5px;
     margin-right: 87%;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .container_price {
@@ -148,6 +147,7 @@ header {
     padding: 20px;
     margin-bottom: 10px;
     width: 86%;
+    margin-right:10px;
 }
 
 .container_fontsize {
@@ -157,9 +157,10 @@ header {
 .container_size {
     border: 1px dashed gray;
     padding: 10px;
-    width: 89%;
+    width:90%;
     font-size: 22px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left:5px;
     
 }
 
@@ -217,16 +218,17 @@ header {
 }
 
 .addcart {
-    width: 64%;
+    width: 65%;
     height: 53px;
     font-size: 25px;
     display: inline-flex;
-    margin-left: 20px;
+    margin-left: 10px;
     border-radius: 5%;
     color: #2F80ED;
     background-color: white;
     cursor: pointer;
     margin-top:0;
+    
 }
 
 .addcart:hover {
@@ -236,11 +238,11 @@ header {
 
 .container_mua {
     display: inline-flex;
-    width: 91%;
+    width: 94%;
     height: 55px;
     border: 1px solid auto;
     background-color: #02125c;
-    margin: 18px;
+    margin-top:10px;
     font-size: 30px;
     padding-top:0px;
     border-radius:5%;
