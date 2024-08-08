@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Tạo danh sách ảnh dựa trên tên sản phẩm
         const imageSources = [
-            `../assets/images/${productName}.webp`, // Ảnh chính
-            `../assets/images/${productName}-1.webp`, // Ảnh 1
-            `../assets/images/${productName}-2.webp`, // Ảnh 2
-            `../assets/images/${productName}-3.webp`  // Ảnh 3
+            `assets/images/${productName}.webp`, // Ảnh chính
+            `assets/images/${productName}-1.webp`, // Ảnh 1
+            `assets/images/${productName}-2.webp`, // Ảnh 2
+            `assets/images/${productName}-3.webp`  // Ảnh 3
         ];
 
         let currentImageIndex = 0;
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentImageIndex = (currentImageIndex + 1) % imageSources.length;
                 imageElement.src = imageSources[currentImageIndex];
                 console.log('Image changed to: ' + imageSources[currentImageIndex]); // Thông báo đường dẫn ảnh mới
-            }, 2000); // 2 giây
+            }, 1200); // 2 giây
         }
 
         function stopImageRotation() {
@@ -35,5 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Kiểm tra nếu ảnh ban đầu được tải đúng cách
         imageElement.onload = () => console.log('Initial image loaded successfully.');
         imageElement.onerror = () => console.error('Error loading image: ' + imageElement.src);
+    });
+
+    const productContainers = document.querySelectorAll('.jean_product');
+    productContainers.forEach(container => {
+        container.addEventListener('mouseover', () => {
+            container.querySelector('.cart-eye').style.display = 'flex';
+        });
+
+        container.addEventListener('mouseout', () => {
+            container.querySelector('.cart-eye').style.display = 'none';
+        });
     });
 });

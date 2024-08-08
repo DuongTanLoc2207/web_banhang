@@ -10,6 +10,8 @@
     margin: 0;
     height: 40px;
     z-index: 999;
+    
+    
 }
 
 .underheader_content{
@@ -18,7 +20,8 @@
 .underheader a {
     text-decoration: none;
     color: #2F80ED;
-    margin:5px;   
+    margin:5px;
+    
 }
 
 .mauxanhdam{
@@ -61,15 +64,15 @@
 }
 .jean_product_image img {
     width: 100%;
-    height: 350px;
+    height: 320px;
     border-radius: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 5%;
 }
 .jean_product_content {
     padding-left: 30px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .jean_product_content a {

@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Tạo danh sách ảnh dựa trên tên sản phẩm
         const imageSources = [
-            `assets/images/${productName}.webp`, // Ảnh chính
-            `assets/images/${productName}-1.webp`, // Ảnh 1
-            `assets/images/${productName}-2.webp`, // Ảnh 2
-            `assets/images/${productName}-3.webp`  // Ảnh 3
+            `../assets/images/${productName}.webp`, // Ảnh chính
+            `../assets/images/${productName}-1.webp`, // Ảnh 1
+            `../assets/images/${productName}-2.webp`, // Ảnh 2
+            `../assets/images/${productName}-3.webp`  // Ảnh 3
         ];
 
         let currentImageIndex = 0;
