@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
     <link rel="stylesheet" href="../assets/css/products.css">
     <link rel="stylesheet" href="../assets/css/detail-product.css">
-    <script src="../assets/js/detail-product.js"></script>
+    <link rel="stylesheet" href="../assets/css/successModal.css">
 </head>
 <body>
     <header>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="container_content">Quần Jean Nam Trắng Rách Gối - LoVa
+        <div class="container_content" data-id="Lova123456789" data-name="Quần Jean Nam Trắng Rách Gối" data-price="520000" data-image="../assets/images/Jean8.webp">Quần Jean Nam Trắng Rách Gối - LoVa
             <p>Còn hàng</p>
 
             <div class="container_id"><b>Mã sản phẩm:</b>Lova123456789</div>
@@ -86,7 +86,7 @@
             <span class="font-size-soluong">Số lượng <input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="container_soluong"><input class="addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></span>
        
             
-            <a href="#"><div class="container_mua"><div class="container_mua_content">MUA NGAY</div></div></a>
+            <a href="javascript:void(0);"><div class="container_mua"> <div class="container_mua_content" id="buyNowBtn">MUA NGAY</div></div></a>
             <br>
         </div>
     </div>
@@ -132,5 +132,17 @@
    
         
     </footer>
+
+    <!-- Modal addCartSuccess -->
+    <div id="successModal" class="modalSuccess">
+        <div class="modal-addCartSuccess">
+            <span class="close">&times;</span>
+            <h2>Thêm vào giỏ hàng thành công!</h2>
+            <p>Bạn đã thêm hàng vào giỏ thành công, hãy tiếp tục mua hàng bạn nhé.</p>
+            <button id="okBtn">Tiếp tục mua hàng</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/detail-product.js"></script>
 </body>
 </html>

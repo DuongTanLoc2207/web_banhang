@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const sizeButtons = document.querySelectorAll('.size-button');
     let currentSlide = 0;
     let currentThumbnail = null;
+    let isBuyNow = false; // Thêm biến cờ
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
             slide.style.opacity = i === index ? '1' : '0';
         });
 
-        // Update the border of the corresponding thumbnail
         if (currentThumbnail) {
             currentThumbnail.classList.remove('selected');
         }
@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showSlide(currentSlide);
 
-    // Function to update the selected size
     function selectSize(size) {
         document.querySelectorAll('.selected-size').forEach(element => {
             element.textContent = size;
@@ -69,13 +68,18 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', handleSizeButtonClick);
     });
 
-    // Automatically select size 28
-    const defaultSizeButton = document.querySelector('.size-button[data-size="29"]');
-    if (defaultSizeButton) {
-        defaultSizeButton.click();
-    }
+    // Chọn kích thước mặc định là "XS" và "29"
+    const defaultSizeButtons = [
+        document.querySelector('.size-button[data-size="XS"]'),
+        document.querySelector('.size-button[data-size="29"]')
+    ];
 
-    // Add to cart functionality
+    defaultSizeButtons.forEach(button => {
+        if (button) {
+            button.click();
+        }
+    });
+
     document.getElementById('addcart').addEventListener('click', () => {
         const productElement = document.querySelector('.container_content');
         const product = {
@@ -93,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         addToCart(product);
+        if (!isBuyNow) { // Kiểm tra biến cờ
+            showSuccessModal();
+        }
     });
 
     function addToCart(product) {
@@ -106,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        showSuccessModal();
     }
 
     function showSuccessModal() {
@@ -144,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Lưu sản phẩm vào giỏ hàng
+        isBuyNow = true; // Đặt biến cờ là true
         addToCart(product);
 
         // Chuyển hướng đến trang thanh toán

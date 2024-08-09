@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/font/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
     <link rel="stylesheet" href="../assets/css/products.css">
     <link rel="stylesheet" href="../assets/css/detail-product.css">
-    <script src="../assets/js/detail-product.js"></script>
+    <link rel="stylesheet" href="../assets/css/successModal.css">
 </head>
 <body>
     <header>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="container_content">Quần Boxer Nam Xanh Lục - LoVa
+        <div class="container_content" data-id="Lova123456789" data-name="Quần Boxer Nam Xanh Lục" data-price="130000" data-image="../assets/images/Boxer2.webp">Quần Boxer Nam Xanh Lục - LoVa
             <p>Còn hàng</p>
 
             <div class="container_id"><b>Mã sản phẩm:</b>Lova123456789</div>
@@ -71,10 +71,13 @@
                 Size: <b class="selected-size"></b>
                 <ul>
                    
-                    <button name="29" type="button" class="size-button" data-size="S">S</button>
-                    <button name="30" type="button" class="size-button" data-size="M">M</button>
-                    <button name="31" type="button" class="size-button" data-size="L">L</button>
-                    <button name="31" type="button" class="size-button" data-size="XL">XL</button>
+                    <button name="XS" type="button" class="size-button" data-size="XS">XS</button>
+                    <button name="S" type="button" class="size-button" data-size="S">S</button>
+                    <button name="M" type="button" class="size-button" data-size="M">M</button>
+                    <button name="L" type="button" class="size-button" data-size="L">L</button>
+                    <button name="XL" type="button" class="size-button" data-size="XL">XL</button>
+                    <button name="XXL" type="button" class="size-button" data-size="XXL">XXL</button>
+                    <button name="3XL" type="button" class="size-button" data-size="3XL">3XL</button>
                     
                    
                
@@ -84,7 +87,7 @@
             <span class="font-size-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="container_soluong"><input class="addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></span>
        
             
-            <a href="#"><div class="container_mua"><div class="container_mua_content">MUA NGAY</div></div></a>
+            <a href="javascript:void(0);"><div class="container_mua"> <div class="container_mua_content" id="buyNowBtn">MUA NGAY</div></div></a>
             <br>
         </div>
     </div>
@@ -130,5 +133,17 @@
    
         
     </footer>
+
+    <!-- Modal addCartSuccess -->
+    <div id="successModal" class="modalSuccess">
+        <div class="modal-addCartSuccess">
+            <span class="close">&times;</span>
+            <h2>Thêm vào giỏ hàng thành công!</h2>
+            <p>Bạn đã thêm hàng vào giỏ thành công, hãy tiếp tục mua hàng bạn nhé.</p>
+            <button id="okBtn">Tiếp tục mua hàng</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/detail-product.js"></script>
 </body>
 </html>
