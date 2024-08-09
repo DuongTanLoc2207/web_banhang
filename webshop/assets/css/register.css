@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: #f2f2f2; 
 }
 
@@ -166,18 +166,15 @@ img {
 
 footer {
     display: flex; 
-    height:230px;
     padding: 20px; 
     background-color:#001f5d; 
     border-top: 1px solid #ccc; 
-  
     bottom: 0;
     left: 0;
     width: 100%;
     margin-top:100px;
     color:white;
     font-size:23px;
-
 }
 .diachi img{
     border-radius:50%;
@@ -251,11 +248,10 @@ footer {
     background-color: #faf7f7;
     height: 50px;
     z-index: 999;
-    border-bottom: 1px solid #ccc; 
 } 
 
 .underheader_content{
-    margin: 16px 50px;
+    margin: 16px 20px;
 }
 
 .underheader a {

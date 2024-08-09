@@ -21,7 +21,7 @@ function loadCartItems() {
                 <div class="price" id="price_${index}" data-price="${item.price}">${item.price.toLocaleString()} đ</div>
                 <div class="quantity">
                     <button class="btn btn-light" onclick="addMoreCart(${index}, -1)">-</button>
-                    <input type="text" readonly id="num_${index}" value="${item.quantity}" class="form-control" onchange="fixCartNum(${index})">
+                    <input type="text" id="num_${index}" value="${item.quantity}" class="form-control" onchange="fixCartNum(${index})">
                     <button class="btn btn-light" onclick="addMoreCart(${index}, 1)">+</button>
                 </div>
                 <div class="total-price" id="total_price_${index}">${(item.price * item.quantity).toLocaleString()} đ</div>
