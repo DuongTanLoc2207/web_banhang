@@ -19,7 +19,6 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
-    height: 700px;
     padding-left:20px;
     margin-top:60px;
     
@@ -32,7 +31,7 @@ header {
     margin:10px;
     margin-right:30px;
     display:block;
-    height:590px;
+    
 }
 
 .container_extra img{
@@ -50,13 +49,13 @@ header {
 
 .container_detail {
     width: 40%;
-    height:595px;
+   
     margin-top: 80px;
 }
 
 .container_detail img {
     width: 95%;
-    height: 595px;
+   
 }
 
 .slideshow-container {
@@ -206,8 +205,8 @@ header {
     border-radius: 10%;
     display: inline-flex;
     width: 35px;
-    height: 28px;
-    padding: 10px 5px;
+    
+    padding: 14px 5px;
     padding-left: 20px;
     font-size: 18px;
     margin-top:20px;
@@ -219,7 +218,7 @@ header {
 
 .addcart {
     width: 65%;
-    height: 53px;
+    padding:10px 0px;
     font-size: 25px;
     display: inline-flex;
     margin-left: 10px;
@@ -239,13 +238,14 @@ header {
 .container_mua {
     display: inline-flex;
     width: 94%;
-    height: 55px;
+    
     border: 1px solid auto;
     background-color: #02125c;
     margin-top:10px;
     font-size: 30px;
-    padding-top:0px;
+    padding:5px 0px;
     border-radius:5%;
+    padding-bottom:10px;
 }
 
 .container_mua:hover {
