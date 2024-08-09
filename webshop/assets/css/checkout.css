@@ -331,8 +331,7 @@ ul {
     align-items: center; 
     justify-content: space-evenly; 
     font-size: 25px; 
-  
-    width: 200px; 
+    width: 130px; 
 }
 
 .nav-icon a {
@@ -430,18 +429,27 @@ footer {
 
 }
 
+
 .underheader {
     position: absolute;
     top: 65px; 
     left: 0;
     width: 100%;
-    background-color: #faf7f7;
+    background-color: #9d9c9c;
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 0;
     height: 40px;
-    z-index: 999;   
+    z-index: 999;
+}
+
+.underheader {
+    position: fixed;
+    top: 65px; 
+    z-index: 999;
+    background-color: rgb(250, 247, 247);
+    padding:5px 20px; 
 }
 
 .underheader_content{
@@ -465,3 +473,7 @@ footer {
     margin-top: 10px;
 }
 
+
+.font-bold{
+    font-weight:bold;
+}
