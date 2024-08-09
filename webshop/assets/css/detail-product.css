@@ -155,7 +155,7 @@ header {
 }
 
 .container_size {
-    border: 1px dashed gray;
+    border: 1px dashed black;
     padding: 10px;
     width:90%;
     font-size: 22px;
@@ -165,7 +165,7 @@ header {
 }
 
 .container_size ul{
-    background-color:white;
+    background-color:rgb(237, 235, 235);
 }
 
 .size-button {
