@@ -74,4 +74,80 @@ document.addEventListener('DOMContentLoaded', function() {
     if (defaultSizeButton) {
         defaultSizeButton.click();
     }
+
+    // Add to cart functionality
+    document.getElementById('addcart').addEventListener('click', () => {
+        const productElement = document.querySelector('.container_content');
+        const product = {
+            id: productElement.getAttribute('data-id'),
+            name: productElement.getAttribute('data-name'),
+            price: parseInt(productElement.getAttribute('data-price')),
+            size: document.querySelector('.size-button.selected')?.getAttribute('data-size'),
+            quantity: parseInt(document.getElementById('soluong').value),
+            image: productElement.getAttribute('data-image')
+        };
+
+        if (!product.size) {
+            alert('Vui lòng chọn size!');
+            return;
+        }
+
+        addToCart(product);
+    });
+
+    function addToCart(product) {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        const existingItemIndex = cartItems.findIndex(item => item.id === product.id && item.size === product.size);
+        if (existingItemIndex !== -1) {
+            cartItems[existingItemIndex].quantity += product.quantity;
+        } else {
+            cartItems.push(product);
+        }
+
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        showSuccessModal();
+    }
+
+    function showSuccessModal() {
+        const modal = document.getElementById('successModal');
+        modal.style.display = 'block';
+        
+        document.querySelector('.close').addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        document.getElementById('okBtn').addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
+
+    document.getElementById('buyNowBtn').addEventListener('click', () => {
+        const productElement = document.querySelector('.container_content');
+        const product = {
+            id: productElement.getAttribute('data-id'),
+            name: productElement.getAttribute('data-name'),
+            price: parseInt(productElement.getAttribute('data-price')),
+            size: document.querySelector('.size-button.selected')?.getAttribute('data-size'),
+            quantity: parseInt(document.getElementById('soluong').value),
+            image: productElement.getAttribute('data-image')
+        };
+
+        if (!product.size) {
+            alert('Vui lòng chọn size!');
+            return;
+        }
+
+        // Lưu sản phẩm vào giỏ hàng
+        addToCart(product);
+
+        // Chuyển hướng đến trang thanh toán
+        window.location.href = '../checkout.html'; 
+    });
 });
