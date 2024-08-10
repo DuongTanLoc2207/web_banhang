@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/modal-cart.css">
+    <link rel="stylesheet" href="../assets/css/modal-product.css">
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
                 <li><a href="short.html">Quần short</a></li>
                 <li><a href="jogger.html">Quần jogger</a></li>
                 <li><a href="boxer.html">Quần boxer</a></li>
-                <li><a href="../tranggioithieu.html" target="_blank">Giới thiệu LoVa</a></li>
+                <li><a href="../tranggioithieu.html" target="_blank">Giới thiệu LoVaStore</a></li>
             </ul>
             <div class="nav-icon">
                 <a><i class="ti-shopping-cart"></i></a>  
@@ -50,7 +51,7 @@
                 <a href="../detail-product/detail-boxer1.html"><img class="product-image" data-product-name="Boxer1" src="../assets/images/Boxer1.webp" alt="Sản phẩm 1"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-boxer1"></i>
                 <a href="../detail-product/detail-boxer1.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -64,11 +65,11 @@
                 <a href="../detail-product/detail-boxer2.html"><img class="product-image" data-product-name="Boxer2" src="../assets/images/Boxer2.webp" alt="Sản phẩm 2"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill"data-modal="modal-boxer2"></i>
                 <a href="../detail-product/detail-boxer2.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
-                <div><a href="../detail-product/detail-boxer2.html">Quần Boxer Xanh Lục</a></div>
+                <div><a href="../detail-product/detail-boxer2.html">Quần Boxer Xanh Đen</a></div>
                 <span class="jean_product_content_price">130,000</span><span class="gachchan">đ</span><br>
             </div>
         </div>
@@ -78,7 +79,7 @@
                 <a href="../detail-product/detail-boxer3.html"><img class="product-image" data-product-name="Boxer3" src="../assets/images/Boxer3.webp" alt="Sản phẩm 3"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill"data-modal="modal-boxer3"></i>
                 <a href="../detail-product/detail-boxer3.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -92,7 +93,7 @@
                 <a href="../detail-product/detail-boxer4.html"><img class="product-image" data-product-name="Boxer4" src="../assets/images/Boxer4.webp" alt="Sản phẩm 4"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-boxer4"></i>
                 <a href="../detail-product/detail-boxer4.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -106,7 +107,7 @@
                 <a href="../detail-product/detail-boxer5.html"><img class="product-image" data-product-name="Boxer5" src="../assets/images/Boxer5.webp" alt="Sản phẩm 5"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-boxer5"></i>
                 <a href="../detail-product/detail-boxer5.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -120,7 +121,7 @@
                 <a href="../detail-product/detail-boxer6.html"><img class="product-image" data-product-name="Boxer6" src="../assets/images/Boxer6.webp" alt="Sản phẩm 6"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-boxer6"></i>
                 <a href="../detail-product/detail-boxer6.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -134,7 +135,7 @@
                 <a href="../detail-product/detail-boxer7.html"><img class="product-image" data-product-name="Boxer7" src="../assets/images/Boxer7.webp" alt="Sản phẩm 7"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-boxer7"></i>
                 <a href="../detail-product/detail-boxer7.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -148,7 +149,7 @@
                 <a href="../detail-product/detail-boxer8.html"><img class="product-image" data-product-name="Boxer8" src="../assets/images/Boxer8.webp" alt="Sản phẩm 8"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-boxer8"></i>
                 <a href="../detail-product/detail-boxer8.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -192,6 +193,358 @@
         
     </footer>
 
+
+    <!--Modal quần boxer-->
+
+    <div id="modal-boxer1" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer1.webp" alt="Quần boxer 1">
+                    <img class="slide-image" src="../assets/images/Boxer1-1.webp" alt="Quần boxer 1-1">
+                    <img class="slide-image" src="../assets/images/Boxer1-2.webp" alt="Quần boxer 1-2">
+                    <img class="slide-image" src="../assets/images/Boxer1-3.webp" alt="Quần boxer 1-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer1')">&times;</span>
+                <div class="modal-title">Quần Boxer Xám Xanh - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">120,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer1.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-boxer2" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer2.webp" alt="Quần boxer 2">
+                    <img class="slide-image" src="../assets/images/Boxer2-1.webp" alt="Quần boxer 2-1">
+                    <img class="slide-image" src="../assets/images/Boxer2-2.webp" alt="Quần boxer 2-2">
+                    <img class="slide-image" src="../assets/images/Boxer2-3.webp" alt="Quần boxer 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer2')">&times;</span>
+                <div class="modal-title">Quần Boxer Xanh Đen - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">130,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer2.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-boxer3" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer3.webp" alt="Quần boxer 2">
+                    <img class="slide-image" src="../assets/images/Boxer3-1.webp" alt="Quần boxer 2-1">
+                    <img class="slide-image" src="../assets/images/Boxer3-2.webp" alt="Quần boxer 2-2">
+                    <img class="slide-image" src="../assets/images/Boxer3-3.webp" alt="Quần boxer 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer3')">&times;</span>
+                <div class="modal-title">Quần Boxer Xanh Nhạt - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">140,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer3.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-boxer4" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer4.webp" alt="Quần boxer 1">
+                    <img class="slide-image" src="../assets/images/Boxer4-1.webp" alt="Quần boxer 1-1">
+                    <img class="slide-image" src="../assets/images/Boxer4-2.webp" alt="Quần boxer 1-2">
+                    <img class="slide-image" src="../assets/images/Boxer4-3.webp" alt="Quần boxer 1-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer4')">&times;</span>
+                <div class="modal-title">Quần Boxer Xám - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">150,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer4.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-boxer5" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer5.webp" alt="Quần boxer 2">
+                    <img class="slide-image" src="../assets/images/Boxer5-1.webp" alt="Quần boxer 2-1">
+                    <img class="slide-image" src="../assets/images/Boxer5-2.webp" alt="Quần boxer 2-2">
+                    <img class="slide-image" src="../assets/images/Boxer5-3.webp" alt="Quần boxer 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer5')">&times;</span>
+                <div class="modal-title">Quần Boxer Xanh Đậm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">150,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer5.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="modal-boxer6" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer6.webp" alt="Quần boxer 3">
+                    <img class="slide-image" src="../assets/images/Boxer6-1.webp" alt="Quần boxer 3-1">
+                    <img class="slide-image" src="../assets/images/Boxer6-2.webp" alt="Quần boxer 3-2">
+                    <img class="slide-image" src="../assets/images/Boxer6-3.webp" alt="Quần boxer 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer6')">&times;</span>
+                <div class="modal-title">Quần Boxer Xanh Lục Nhạt - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">100,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer6.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-boxer7" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer7.webp" alt="Quần boxer 7">
+                    <img class="slide-image" src="../assets/images/Boxer7-1.webp" alt="Quần boxer 7-1">
+                    <img class="slide-image" src="../assets/images/Boxer7-2.webp" alt="Quần boxer 7-2">
+                    <img class="slide-image" src="../assets/images/Boxer7-3.webp" alt="Quần boxer 7-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer7')">&times;</span>
+                <div class="modal-title">Quần Boxer Đen - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">160,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer7.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-boxer8" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Boxer8.webp" alt="Quần boxer 2">
+                    <img class="slide-image" src="../assets/images/Boxer8-1.webp" alt="Quần boxer 2-1">
+                    <img class="slide-image" src="../assets/images/Boxer8-2.webp" alt="Quần boxer 2-2">
+                    <img class="slide-image" src="../assets/images/Boxer8-3.webp" alt="Quần boxer 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-boxer8')">&times;</span>
+                <div class="modal-title">Quần Boxer Trắng - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">170,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-boxer7.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/modal-product.js"></script>
     <script src="../assets/js/modal-cart.js"></script>
     <script src="../assets/js/product.js"></script>
     <scrip src="../assets/js/trangchu.js"></scrip>

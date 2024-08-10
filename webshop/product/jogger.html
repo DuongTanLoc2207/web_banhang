@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/modal-cart.css">
-    <link rel="stylesheet" href="../assets/css/detail-product.css">
+    <link rel="stylesheet" href="../assets/css/modal-product.css">
 
 </head>
 <body>
@@ -26,7 +26,7 @@
                 <li><a href="short.html">Quần short</a></li>
                 <li><a href="jogger.html">Quần jogger</a></li>
                 <li><a href="boxer.html">Quần boxer</a></li>
-                <li><a href="../tranggioithieu.html" target="_blank">Giới thiệu LoVa</a></li>
+                <li><a href="../tranggioithieu.html" target="_blank">Giới thiệu LoVaStore</a></li>
             </ul>
             <div class="nav-icon">
                 <a><i class="ti-shopping-cart"></i></a>  
@@ -66,11 +66,11 @@
                 <a href="../detail-product/detail-jogger2.html"><img class="product-image" data-product-name="Jogger2" src="../assets/images/Jogger2.webp" alt="Sản phẩm 2"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger2"></i>
                 <a href="../detail-product/detail-jogger2.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
-                <div><a href="../detail-product/detail-jogger2.html">Quần Jogger Jean Xanh</a></div>
+                <div><a href="../detail-product/detail-jogger2.html">Quần Jogger Jean Xanh </a></div>
                 <span class="jean_product_content_price">350,000</span><span class="gachchan">đ</span><br>
             </div>
         </div>
@@ -80,7 +80,7 @@
                 <a href="../detail-product/detail-jogger3.html"><img class="product-image" data-product-name="Jogger3" src="../assets/images/Jogger3.webp" alt="Sản phẩm 3"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger3"></i>
                 <a href="../detail-product/detail-jogger3.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -94,7 +94,7 @@
                 <a href="../detail-product/detail-jogger4.html"><img class="product-image" data-product-name="Jogger4" src="../assets/images/Jogger4.webp" alt="Sản phẩm 4"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger4"></i>
                 <a href="../detail-product/detail-jogger4.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -108,7 +108,7 @@
                 <a href="../detail-product/detail-jogger5.html"><img class="product-image" data-product-name="Jogger5" src="../assets/images/Jogger5.webp" alt="Sản phẩm 5"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger5"></i>
                 <a href="../detail-product/detail-jogger5.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -122,7 +122,7 @@
                 <a href="../detail-product/detail-jogger6.html"><img class="product-image" data-product-name="Jogger6" src="../assets/images/Jogger6.webp" alt="Sản phẩm 6"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger6"></i>
                 <a href="../detail-product/detail-jogger6.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -136,7 +136,7 @@
                 <a href="../detail-product/detail-jogger7.html"><img class="product-image" data-product-name="Jogger7" src="../assets/images/Jogger7.webp" alt="Sản phẩm 7"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger7"></i>
                 <a href="../detail-product/detail-jogger7.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -150,7 +150,7 @@
                 <a href="../detail-product/detail-jogger8.html"><img class="product-image" data-product-name="Jogger8" src="../assets/images/Jogger8.webp" alt="Sản phẩm 8"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-jogger8"></i>
                 <a href="../detail-product/detail-jogger8.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -194,6 +194,358 @@
    
         
     </footer>
+
+    <!--Modal quần jogger-->
+
+    <div id="modal-jogger1" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger1.webp" alt="Quần jogger 3">
+                    <img class="slide-image" src="../assets/images/Jogger1-1.webp" alt="Quần jogger 3-1">
+                    <img class="slide-image" src="../assets/images/Jogger1-2.webp" alt="Quần jogger 3-2">
+                    <img class="slide-image" src="../assets/images/Jogger1-3.webp" alt="Quần jogger 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger1')">&times;</span>
+                <div class="modal-title">Quần Jogger Đen Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">300,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger1.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jogger2" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger2.webp" alt="Quần jogger 2">
+                    <img class="slide-image" src="../assets/images/Jogger2-1.webp" alt="Quần jogger 2-1">
+                    <img class="slide-image" src="../assets/images/Jogger2-2.webp" alt="Quần jogger 2-2">
+                    <img class="slide-image" src="../assets/images/Jogger2-3.webp" alt="Quần jogger 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger2')">&times;</span>
+                <div class="modal-title">Quần Jogger Jean Xanh Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">350,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger2.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jogger3" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger3.webp" alt="Quần jogger 3">
+                    <img class="slide-image" src="../assets/images/Jogger3-1.webp" alt="Quần jogger 3-1">
+                    <img class="slide-image" src="../assets/images/Jogger3-2.webp" alt="Quần jogger 3-2">
+                    <img class="slide-image" src="../assets/images/Jogger3-3.webp" alt="Quần jogger 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger1')">&times;</span>
+                <div class="modal-title">Quần Jogger Vàng Đậm Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">290,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger3.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-jogger4" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger4.webp" alt="Quần jogger 4">
+                    <img class="slide-image" src="../assets/images/Jogger4-1.webp" alt="Quần jogger 4-1">
+                    <img class="slide-image" src="../assets/images/Jogger4-2.webp" alt="Quần jogger 4-2">
+                    <img class="slide-image" src="../assets/images/Jogger4-3.webp" alt="Quần jogger 4-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger4')">&times;</span>
+                <div class="modal-title">Quần Jogger Trắng Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">320,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger4.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jogger5" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger5.webp" alt="Quần jogger 3">
+                    <img class="slide-image" src="../assets/images/Jogger5-1.webp" alt="Quần jogger 3-1">
+                    <img class="slide-image" src="../assets/images/Jogger5-2.webp" alt="Quần jogger 3-2">
+                    <img class="slide-image" src="../assets/images/Jogger5-3.webp" alt="Quần jogger 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger5')">&times;</span>
+                <div class="modal-title">Quần Jogger Xám Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">350,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger5.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jogger6" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger6.webp" alt="Quần jogger xanh 1">
+                    <img class="slide-image" src="../assets/images/Jogger6-1.webp" alt="Quần jogger xanh 1-1">
+                    <img class="slide-image" src="../assets/images/Jogger6-2.webp" alt="Quần jogger xanh 1-2">
+                    <img class="slide-image" src="../assets/images/Jogger6-3.webp" alt="Quần jogger xanh 1-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger6')">&times;</span>
+                <div class="modal-title">Quần Jogger Đen Ống Suông - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">350,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger6.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-jogger7" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger7.webp" alt="Quần jogger xanh 2">
+                    <img class="slide-image" src="../assets/images/Jogger7-1.webp" alt="Quần jogger xanh 2-1">
+                    <img class="slide-image" src="../assets/images/Jogger7-2.webp" alt="Quần jogger xanh 2-2">
+                    <img class="slide-image" src="../assets/images/Jogger7-3.webp" alt="Quần jogger xanh 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger7')">&times;</span>
+                <div class="modal-title">Quần Jogger Xanh Ống Suông- Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">260,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger7.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal-jogger8" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Jogger1.webp" alt="Quần jogger 3">
+                    <img class="slide-image" src="../assets/images/Jogger1-1.webp" alt="Quần jogger 3-1">
+                    <img class="slide-image" src="../assets/images/Jogger1-2.webp" alt="Quần jogger 3-2">
+                    <img class="slide-image" src="../assets/images/Jogger1-3.webp" alt="Quần jogger 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-jogger8')">&times;</span>
+                <div class="modal-title">Quần Jogger Đen Nỉ Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">250,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-jogger8.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+  
+
+   
 
     <script src="../assets/js/modal-product.js"></script>
     <script src="../assets/js/modal-cart.js"></script>

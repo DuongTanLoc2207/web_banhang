@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/css/successModal.css">    
     <link rel="stylesheet" href="../assets/css/modal-cart.css">
+    <link rel="stylesheet" href="../assets/css/modal-bangsize.css">
+    <link rel="stylesheet" href="../assets/css/modal-imgshow.css">
 </head>
 <body>
     <header>
@@ -23,6 +25,7 @@
                 <li><a href="../product/short.html">Quần short</a></li>
                 <li><a href="../product/jogger.html">Quần jogger</a></li>
                 <li><a href="../product/boxer.html">Quần boxer</a></li>
+                <li><a href="../tranggioithieu.html" target="_blank">Giới thiệu LoVaStore</a></li>
             </ul>
             <div class="nav-icon">
                 <a><i class="ti-shopping-cart"></i></a>  
@@ -46,10 +49,10 @@
         </div>
         <div class="container_detail">
             <div class="slideshow-container">
-                <img class="slide-image" src="../assets/images/Short2.webp" alt="Quần tây 1">
-                <img class="slide-image" src="../assets/images/Short2-1.webp" alt="Quần tây 1-1">
-                <img class="slide-image" src="../assets/images/Short2-2.webp" alt="Quần tây 1-2">
-                <img class="slide-image" src="../assets/images/Short2-3.webp" alt="Quần tây  1-3">
+                <img class="slide-image" src="../assets/images/Jogger2.webp" alt="Quần tây 1">
+                <img class="slide-image" src="../assets/images/Jogger2-1.webp" alt="Quần tây 1-1">
+                <img class="slide-image" src="../assets/images/Jogger2-2.webp" alt="Quần tây 1-2">
+                <img class="slide-image" src="../assets/images/Jogger2-3.webp" alt="Quần tây  1-3">
                 <a class="prev" onclick="prevSlide()">&#10094;</a>
                 <a class="next" onclick="nextSlide()">&#10095;</a>
             </div>
@@ -112,7 +115,7 @@
         <div class="under_product_bangsize">
             <h7>Bảng Size</h7>
             <hr>
-            <img src="../assets/images/SizeQuanJogger.webp">
+            <img id="sizeChartImage" src="../assets/images/SizeQuanJogger.webp">
         </div>
     </div>
 
@@ -144,6 +147,22 @@
         </div>
     </div>
 
+        <!-- Modal Image Show -->
+<div id="imageModal" class="modal-image">
+    <span class="close-image-modal">&times;</span>
+    <img class="modal-content-image" id="imgInModal">
+</div>
+
+<!-- Modal Bảng Size -->
+<div id="sizeChartModal" class="modal-size-chart">
+    <div class="modal-content-size-chart">
+        <span class="close-size-chart">&times;</span>
+        <img src="../assets/images/SizeQuanJean.jpg" alt="Bảng Size">
+    </div>
+</div>
+
+    <script src="../assets/js/modal-bangsize.js"></script>
+    <script src="../assets/js/modal-imgshow.js"></script>
     <script src="../assets/js/modal-cart.js"></script>
     <script src="../assets/js/detail-product.js"></script>
 </body>

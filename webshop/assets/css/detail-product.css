@@ -64,6 +64,7 @@ header {
     height: 595px;
     overflow: hidden;
     max-width: 100%;
+    cursor: pointer;
 }
 
 .slide-image {
@@ -122,7 +123,7 @@ header {
     font-size: 15px;
     margin-top: 5px;
     margin-right: 87%;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .container_price {
@@ -302,6 +303,7 @@ header {
 }
 .under_product_bangsize img{
     width:120%;
+    cursor: pointer;
     
 }
 .under_product_bangsize h7{
