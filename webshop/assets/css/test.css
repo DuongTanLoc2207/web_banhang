@@ -13,16 +13,18 @@
 }
 
 .container-modal {
-    width: 80%;
+    width: 60%;
     max-width: 1000px; /* Điều chỉnh kích thước tối đa nếu cần */
-    height: 650px;
+    height: 570px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
-    left:10%;
-    top:10%;
+    left:50%;
+    top:100px;
+    transform:translateX(-50%);
+   
     display: flex;
     gap: 20px;
     box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
@@ -36,7 +38,7 @@
 
 .container-modal-anh img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -47,7 +49,7 @@
     overflow-y: auto;
     padding: 10px;
     box-sizing: border-box;
-    margin-left:10px;
+    margin-left:5px;
 }
 
 .close-modal {
@@ -59,7 +61,7 @@
 }
 
 .modal-title{
-    font-size:25px; 
+    font-size:23px; 
     
 
 }
@@ -71,26 +73,26 @@
 .modal-price{
     color:rgb(5, 91, 144);
     margin-top:15px;
-    font-size:20px;
+    font-size:18px;
    
 }
 
 .modal-size{
-    margin-top:20px;
+    margin-top:15px;
     border:1px solid rgb(192, 190, 190);
-    font-size:20px;
+    font-size:18px;
 }
 
 
 
 .modal-size ul{
     background-color:white;
-    margin:5px;
+    margin:2px;
 }
 
 
 .modal-sales{
-    margin-top:20px;
+    margin-top:15px;
     border:1px dashed red;
 
 
@@ -102,7 +104,7 @@
 }
 
 .modal-sales div{
-    margin:7px;
+    margin:5px;
 }
 
 .modal-soluong{
@@ -121,9 +123,9 @@
 }
 
 .modal-addcart{
-    width:265px;
+    width:180px;
     padding:11px 0px;
-    margin-left:20px;
+    margin-left:10px;
     border:2px solid rgb(5, 5, 137);
     border-radius:5%;
     font-size:20px;
