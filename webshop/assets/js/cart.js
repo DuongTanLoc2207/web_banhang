@@ -6,32 +6,58 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadCartItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const cartContainer = document.querySelector('.cart');
+    const emptyCartContainer = document.querySelector('.cart-empty');
+    
+    // Xóa tất cả các item hiện có trong giỏ hàng
+    cartContainer.innerHTML = `
+        <div class="cart-item header">
+            <!-- <div class="stt">STT</div> -->
+            <div class="thumbnail">Sản phẩm</div>
+            <div class="title">Thông Tin</div>
+            <div class="price">Giá</div>
+            <div class="quantity">Số Lượng</div>
+            <div class="total-price">Thành Tiền</div>
+            <div class="actions"></div>
+        </div>
+    `;
+    
+    if (cartItems.length === 0) {
+        // Hiển thị phần giỏ hàng trống
+        cartContainer.style.display = 'none';
+        emptyCartContainer.style.display = 'block';
+    } else {
+        // Ẩn phần giỏ hàng trống
+        emptyCartContainer.style.display = 'none';
+        cartContainer.style.display = 'block';
 
-    cartItems.forEach((item, index) => {
-        // Check if item has all necessary properties
-        if (!item.image || !item.name || !item.price || !item.size || !item.quantity) {
-            console.error(`Item at index ${index} is missing properties:`, item);
-            return;
-        }
+        cartItems.forEach((item, index) => {
+            // Check if item has all necessary properties
+            if (!item.image || !item.name || !item.price || !item.size || !item.quantity) {
+                console.error(`Item at index ${index} is missing properties:`, item);
+                return;
+            }
 
-        const cartItemHTML = `
-            <div class="cart-item" id="row_${index}">
-                <div class="thumbnail"><img src="${item.image}" alt="${item.name}"></div>
-                <div class="title">${item.name} <br> Size: ${item.size}</div>
-                <div class="price" id="price_${index}" data-price="${item.price}">${item.price.toLocaleString()} đ</div>
-                <div class="quantity">
-                    <button class="btn btn-light" onclick="addMoreCart(${index}, -1)">-</button>
-                    <input type="text" id="num_${index}" value="${item.quantity}" class="form-control" onchange="fixCartNum(${index})">
-                    <button class="btn btn-light" onclick="addMoreCart(${index}, 1)">+</button>
+            const cartItemHTML = `
+                <div class="cart-item" id="row_${index}">
+                    <div class="thumbnail"><img src="${item.image}" alt="${item.name}"></div>
+                    <div class="title">${item.name} <br> Size: ${item.size}</div>
+                    <div class="price" id="price_${index}" data-price="${item.price}">${item.price.toLocaleString()} đ</div>
+                    <div class="quantity">
+                        <button class="btn btn-light" onclick="addMoreCart(${index}, -1)">-</button>
+                        <input type="text" id="num_${index}" value="${item.quantity}" class="form-control" onchange="fixCartNum(${index})">
+                        <button class="btn btn-light" onclick="addMoreCart(${index}, 1)">+</button>
+                    </div>
+                    <div class="total-price" id="total_price_${index}">${(item.price * item.quantity).toLocaleString()} đ</div>
+                    <div class="actions"><button class="btn btn-danger" onclick="updateCart(${index}, 0)">Xoá</button></div>
                 </div>
-                <div class="total-price" id="total_price_${index}">${(item.price * item.quantity).toLocaleString()} đ</div>
-                <div class="actions"><button class="btn btn-danger" onclick="updateCart(${index}, 0)">Xoá</button></div>
-            </div>
-        `;
-        cartContainer.insertAdjacentHTML('beforeend', cartItemHTML);
-    });
+            `;
+            cartContainer.insertAdjacentHTML('beforeend', cartItemHTML);
+        });
 
-    updateGrandTotal();
+        updateGrandTotal();
+    }
+
+    updateItemCount();
 }
 
 function addMoreCart(id, quantity) {
@@ -127,4 +153,6 @@ function updateItemCount() {
     });
 
     document.getElementById('item-count').innerText = `${itemCount} sản phẩm`;
+
+    
 }

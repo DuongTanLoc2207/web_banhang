@@ -23,7 +23,7 @@
     border-radius: 8px;
     position: relative;
     left:50%;
-    top:100px;
+    top:30px;
     transform:translateX(-50%);
    
     display: flex;
