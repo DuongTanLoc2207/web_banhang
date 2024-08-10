@@ -63,7 +63,7 @@
 
 
 
-.modalAddCart a.close-modal {
+.modalAddCart a.close-modal-cart {
     position: absolute;
     top: -12.5px;
     right: -12.5px;
@@ -79,6 +79,7 @@
 
 #cart-mini-wanda .cart-scroll {
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 400px;
 }
 

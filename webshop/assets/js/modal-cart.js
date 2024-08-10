@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 </div>
-                <a href="#close-modal" rel="modal:close" class="close-modal">Close</a>
+                <a href="#close-modal" rel="modal:close" class="close-modal-cart">Close</a>
             </div>
         </div>
     `;
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalPriceElement = document.getElementById('total-price');
     const totalViewCartElement = document.getElementById('total-view-cart'); 
     const cartIcon = document.querySelector('.nav-icon .ti-shopping-cart'); 
-    const closeModal = document.querySelector('.close-modal');
+    const closeModal = document.querySelector('.close-modal-cart');
     const modal = document.querySelector('.jquery-modal.blocker'); 
     const modalContent = document.querySelector('.modal-content');
 
