@@ -72,9 +72,10 @@ header {
     width: 95%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
+    opacity: 0; /* Đảm bảo rằng opacity đang hoạt động */
     transition: opacity 1s ease-in-out;
 }
+
 
 .prev, .next {
     cursor: pointer;
