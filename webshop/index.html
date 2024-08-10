@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/modal-product.css">
     <link rel="stylesheet" href="./assets/css/modal-cart.css">
     <link rel="stylesheet" href="./assets/css/modal-product.css">
+    <link rel="stylesheet" href="./assets/css/successModal.css">
 </head>
 <body>
     <header>
@@ -240,7 +241,7 @@
                     </div>
                 </div>
 
-                <<div class="jean_product">
+                <div class="jean_product">
                     <div class="jean_product_image">
                         <a href="detail-product/detail-Jogger7.html"><img class="product-image" data-product-name="Jogger7" src="assets/images/Jogger7.webp" alt="Sản phẩm 2"></a>
                     </div>
@@ -382,7 +383,7 @@
                     <a class="next-modal" onclick="nextSlide()">&#10095;</a>
                 </div>
             </div>
-            <div class="container-modal-noidung">
+            <div class="container-modal-noidung" data-id="Lova11" data-name="Quần Jean Nam Xanh Trơn Ống Ôm" data-price="550000" data-image="../assets/images/Jean1.webp">
                 <span class="close-modal" onclick="closeModal('modal-jean1')">&times;</span>
                 <div class="modal-title">Quần Jean Nam Xanh Trơn Ống Ôm - Lova</div>
                 <div><b>Mã:</b> Lova123</div>
@@ -426,10 +427,10 @@
                     <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
                 </div>
             </div>
-            <div class="container-modal-noidung">
+            <div class="container-modal-noidung" data-id="Lova12" data-name="Quần Jean Nam Xanh Nhạt Trơn Ống Ôm" data-price="550000" data-image="../assets/images/Jean2.webp">
                 <span class="close-modal" onclick="closeModal('modal-jean2')">&times;</span>
                 <div class="modal-title">Quần Jean Nam Xanh Nhạt Trơn Ống Ôm - Lova</div>
-                <div><b>Mã:</b> Lova123</div>
+                <div><b>Mã:</b> Lova12</div>
                 <div class="modal-price">550,000 đ</div>
                 <div class="modal-size">
                 Size: <b class="selected-size"></b>
@@ -471,7 +472,7 @@
                     <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
                 </div>
             </div>
-            <div class="container-modal-noidung">
+            <div class="container-modal-noidung" data-id="Lova123" data-name="Quần Jean Nam Xám Trơn Ống Ôm" data-price="630000" data-image="../assets/images/Jean6.webp">
                 <span class="close-modal" onclick="closeModal('modal-jean6')">&times;</span>
                 <div class="modal-title">Quần Jean Nam Xám Trơn Ống Ôm - Lova</div>
                 <div><b>Mã:</b> Lova123</div>
@@ -514,7 +515,7 @@
                     <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
                 </div>
             </div>
-            <div class="container-modal-noidung">
+            <div class="container-modal-noidung" data-id="Lova123" data-name="Quần Jean Nam Trắng Rách Gối Ống Ôm" data-price="530000" data-image="../assets/images/Jean8.webp">
                 <span class="close-modal" onclick="closeModal('modal-jean8')">&times;</span>
                 <div class="modal-title">Quần Jean Nam Trắng Rách Gối Ống Ôm - Lova</div>
                 <div><b>Mã:</b> Lova123</div>
@@ -1240,9 +1241,17 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal addCartSuccess -->
+    <div id="successModal" class="modalSuccess">
+        <div class="modal-addCartSuccess">
+            <span class="close">&times;</span>
+            <h2>Thêm vào giỏ hàng thành công!</h2>
+            <p>Bạn đã thêm hàng vào giỏ thành công, hãy tiếp tục mua hàng bạn nhé.</p>
+            <button id="okBtn">Tiếp tục mua hàng</button>
+        </div>
+    </div>
     
-
-
 
     <script src="./assets/js/modal-cart.js"></script>
     <script src="assets/js/trangchu.js"></script>

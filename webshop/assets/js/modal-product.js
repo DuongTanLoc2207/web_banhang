@@ -120,4 +120,68 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal(event.target.id);
         }
     });
+
+    // Đăng ký sự kiện cho các nút giỏ hàng
+    document.querySelectorAll('.bi-cart-plus-fill').forEach(button => {
+        button.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-modal');
+            openModal(modalId);
+        });
+    });
+
+    // Đăng ký sự kiện cho nút thêm vào giỏ hàng trong modal
+    document.querySelectorAll('.modal-addcart').forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = button.closest('.container-modal');
+            const productElement = modal.querySelector('.container-modal-noidung');
+            const product = {
+                id: productElement.getAttribute('data-id'),
+                name: productElement.getAttribute('data-name'),
+                price: parseInt(productElement.getAttribute('data-price')),
+                size: modal.querySelector('.size-button.selected')?.getAttribute('data-size'),
+                quantity: parseInt(modal.querySelector('.modal-so').value),
+                image: productElement.getAttribute('data-image')
+            };
+
+            if (!product.size) {
+                alert('Vui lòng chọn size!');
+                return;
+            }
+
+            addToCart(product);
+            showSuccessModal();
+        });
+    });
+
+    function addToCart(product) {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        const existingItemIndex = cartItems.findIndex(item => item.id === product.id && item.size === product.size);
+        if (existingItemIndex !== -1) {
+            cartItems[existingItemIndex].quantity += product.quantity;
+        } else {
+            cartItems.push(product);
+        }
+
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }
+
+    function showSuccessModal() {
+        const modal = document.getElementById('successModal');
+        modal.style.display = 'block';
+        
+        document.querySelector('.close').addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        document.getElementById('okBtn').addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });
