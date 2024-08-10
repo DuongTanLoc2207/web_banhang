@@ -1,0 +1,271 @@
+.blocker {
+    display: none;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999999999;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.blocker:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.05em;
+}
+
+#cart-mini-wanda .modal-header {
+    letter-spacing: 0.8px;
+    color: #252a2b;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e5ec;
+    text-align: center;
+}
+
+#cart-mini-wanda {
+    max-width: 500px;
+}
+
+.img > a > img {
+    width: 80px;
+}
+
+.modalAddCart {
+    opacity: 1; 
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    text-align: left;
+}
+
+
+
+.modalAddCart a.close-modal {
+    position: absolute;
+    top: -12.5px;
+    right: -12.5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA3hJREFUaAXlm8+K00Acx7MiCIJH/yw+gA9g25O49SL4AO3Bp1jw5NvktC+wF88qevK4BU97EmzxUBCEolK/n5gp3W6TTJPfpNPNF37MNsl85/vN/DaTmU6PknC4K+pniqeKJ3k8UnkvDxXJzzy+q/yaxxeVHxW/FNHjgRSeKt4rFoplzaAuHHDBGR2eS9G54reirsmienDCTRt7xwsp+KAoEmt9nLaGitZxrBbPFNaGfPloGw2t4JVamSt8xYW6Dg1oCYo3Yv+rCGViV160oMkcd8SYKnYV1Nb1aEOjCe6L5ZOiLfF120EjWhuBu3YIZt1NQmujnk5F4MgOpURzLfAwOBSTmzp3fpDxuI/pabxpqOoz2r2HLAb0GMbZKlNV5/Hg9XJypguryA7lPF5KMdTZQzHjqxNPhWhzIuAruOl1eNqKEx1tSh5rfbxdw7mOxCq4qS68ZTjKS1YVvilu559vWvFHhh4rZrdyZ69Vmpgdj8fJbDZLJpNJ0uv1cnr/gjrUhQMuI+ANjyuwftQ0bbL6Erp0mM/ny8Fg4M3LtdRxgMtKl3jwmIHVxYXChFy94/Rmpa/pTbNUhstKV+4Rr8lLQ9KlUvJKLyG8yvQ2s9SBy1Jb7jV5a0yapfF6apaZLjLLcWtd4sNrmJUMHyM+1xibTjH82Zh01TNlhsrOhdKTe00uAzZQmN6+KW+sDa/JD2PSVQ873m29yf+1Q9VDzfEYlHi1G5LKBBWZbtEsHbFwb1oYDwr1ZiF/2bnCSg1OBE/pfr9/bWx26UxJL3ONPISOLKUvQza0LZUxSKyjpdTGa/vDEr25rddbMM0Q3O6Lx3rqFvU+x6UrRKQY7tyrZecmD9FODy8uLizTmilwNj0kraNcAJhOp5aGVwsAGD5VmJBrWWbJSgWT9zrzWepQF47RaGSiKfeGx6Szi3gzmX/HHbihwBser4B9UJYpFBNX4R6vTn3VQnez0SymnrHQMsRYGTr1dSk34ljRqS/EMd2pLQ8YBp3a1PLfcqCpo8gtHkZFHKkTX6fs3MY0blKnth66rKCnU0VRGu37ONrQaA4eZDFtWAu2fXj9zjFkxTBOo8F7t926gTp/83Kyzzcy2kZD6xiqxTYnHLRFm3vHiRSwNSjkz3hoIzo8lCKWUlg/YtGs7tObunDAZfpDLbfEI15zsEIY3U/x/gHHc/G1zltnAgAAAABJRU5ErkJggg==);
+}
+
+#cart-mini-wanda .cart-scroll {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#cart-mini-wanda .cart-view .line {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #e3e5ec;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.quantity-area-cartmini {
+    float: left;
+    width: 100px;
+    display: flex;
+}
+
+
+.quantity-area-cartmini .qty-btn {
+    background: #fff;
+    float: left;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    border-radius: 0;
+    font-size: 20px;
+    color: #001F5D;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: unset;
+}
+
+.quantity-area-cartmini .quantity-mini {
+    background: #fff;
+    font-weight: 600;
+    height: 33px;
+    text-align: center;
+    width: 33px;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    float: left;
+    -webkit-appearance: none;
+    font-size: 15px;
+    color: black;
+    padding: 0;
+}
+
+
+#cart-mini-wanda #cart-view tr td.item .pro-price-view {
+    display: block;
+    text-align: center;
+    float: left;
+    line-height: 26px;
+    font-weight: 500;
+    opacity: 1;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+#cart-mini-wanda #cart-view tr td.item .remove-cart {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 17px;
+    top: 10px;
+}
+
+#link-modal {
+    color: #333;
+    text-decoration: none;
+}
+
+#cart-mini-wanda #cart-view tr td.item {
+    padding: 10px 0;
+    position: relative;
+    padding-right: 25px;
+    width: calc(100% - 90px);
+}
+
+
+#cart-mini-wanda .table-total tr td.title-total {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+table tr td, table tr th {
+    padding: 10px;
+    text-align: left;
+}
+
+table tr td {
+    border-top: 1px solid #ddd;
+}
+
+#cart-mini-wanda .table-total tr td#total-view-cart {
+    color: #001F5D;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#cart-mini-wanda .table-total tr td {
+    border: none;
+}
+
+
+#cart-mini-wanda .table-total tr td .btn.wanda-cart-url {
+    background: #001F5D;
+    color: #fff;
+    border-color: #001F5D;
+    border-radius: 8px;
+}
+
+#cart-mini-wanda .table-total tr td .btn.wanda-cart-url:hover {
+    background-color: #1443a3;
+}
+
+#cart-mini-wanda .table-total tr td .btn {
+    padding: 15px 10px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    display: inline-block;
+    line-height: normal;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: transparent;
+    z-index: 1;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#cart-mini-wanda .table-total tr td .btn.wanda-checkout-url {
+    background: #fff;
+    color: #000000;
+    border-color: #000000;
+    border-radius: 8px;
+    width: 180px;
+}
+
+#cart-mini-wanda .table-total tr td .btn.wanda-checkout-url:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+#cart-mini-wanda .table-total tr td .btn.btn.wanda-cart-url{
+    margin-left: 10px;
+    width: 180px;
+}
+
+.size-item {
+    display: block;
+    margin: 5px 0;
+}
+
+.total-price {
+    font-weight: 600;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.text-right {
+    text-align: right;
+    color:#001f5d;
+    font-weight: 600;
+    padding-right: 35px;
+} 
+ 
+
+
+
