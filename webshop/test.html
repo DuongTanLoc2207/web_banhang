@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/products.css">
     <link rel="stylesheet" href="./assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/modal-product.css">
+  
     <link rel="stylesheet" href="assets/css/test.css">
     
 
@@ -55,22 +55,17 @@
                 </div>
             </div>
 
-            
-
-            
-
             <div class="jean_product">
                 <div class="jean_product_image">
                     <a href="detail-product/detail-jean2.html"><img class="product-image" data-product-name="Jean2" src="assets/images/Jean2.webp" alt="Sản phẩm 2"></a>
                 </div>
                 <div class="cart-eye">
                     <i class="bi bi-cart-plus-fill" data-modal="modal-jean2"></i>
-
                     <a href="detail-product/detail-jean2.html"><i class="bi bi-eye"></i></a>
                 </div>
                 <div class="jean_product_content">
                     <div><a href="detail-product/detail-jean2.html">Quần Jean Xanh Nhạt Trơn </a></div>
-                    <span class="jean_product_content_price">590,000</span><span class="gachchan">đ</span><br>
+                    <span class="jean_product_content_price">550,000</span><span class="gachchan">đ</span><br>
                 </div>
             </div>
 
@@ -79,26 +74,26 @@
                     <a href="detail-product/detail-jean6.html"><img class="product-image" data-product-name="Jean6" src="assets/images/Jean6.webp" alt="Sản phẩm 3"></a>
                 </div>
                 <div class="cart-eye">
-                    <i class="bi bi-cart-plus-fill"></i>
+                    <i class="bi bi-cart-plus-fill" data-modal="modal-jean6"></i>
                     <a href="detail-product/detail-jean6.html"><i class="bi bi-eye"></i></a>
                 </div>
                 <div class="jean_product_content">
-                    <div><a href="detail-product/detail-jean6.html">Quần Jean Xám Trơn</a></div>
+                    <div><a href="detail-product/detail-jean6.html">Quần Jean Xám Trơn </a></div>
                     <span class="jean_product_content_price">630,000</span><span class="gachchan">đ</span><br>
                 </div>
             </div>
 
             <div class="jean_product">
                 <div class="jean_product_image">
-                    <a href="detail-product/detail-jean7.html"><img class="product-image" data-product-name="Jean7" src="assets/images/Jean7.webp" alt="Sản phẩm 4"></a>
+                    <a href="detail-product/detail-jean8.html"><img class="product-image" data-product-name="Jean8" src="assets/images/Jean8.webp" alt="Sản phẩm 4"></a>
                 </div>
                 <div class="cart-eye">
-                    <i class="bi bi-cart-plus-fill"></i>
-                    <a href="detail-product/detail-jean7.html"><i class="bi bi-eye"></i></a>
+                    <i class="bi bi-cart-plus-fill" data-modal="modal-jean8"></i>
+                    <a href="detail-product/detail-jean8.html"><i class="bi bi-eye"></i></a>
                 </div>
                 <div class="jean_product_content">
-                    <div><a href="detail-product/detail-jean7.html">Quần Jean Xanh Trơn</a></div>
-                    <span class="jean_product_content_price">550,000</span><span class="gachchan">đ</span><br>
+                    <div><a href="detail-product/detail-jean8.html">Quần Jean Trắng Trơn </a></div>
+                    <span class="jean_product_content_price">530,000</span><span class="gachchan">đ</span><br>
                 </div>
             </div>
         </wrapper>
@@ -428,15 +423,15 @@
                 <img class="slide-image" src="../assets/images/Jean2-1.webp" alt="Quần jean xanh 2-1">
                 <img class="slide-image" src="../assets/images/Jean2-2.webp" alt="Quần jean xanh 2-2">
                 <img class="slide-image" src="../assets/images/Jean2-3.webp" alt="Quần jean xanh 2-3">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
+                <a class="prev" onclick="prevSlide()" >&#10094;</a>
+                <a class="next" onclick="nextSlide()" >&#10095;</a>
             </div>
         </div>
         <div class="container-modal-noidung">
             <span class="close-modal" onclick="closeModal('modal-jean2')">&times;</span>
             <div class="modal-title">Quần Jean Nam Xanh Nhạt Trơn Ống Ôm - Lova</div>
             <div><b>Mã:</b> Lova123</div>
-            <div class="modal-price">590,000 đ</div>
+            <div class="modal-price">550,000 đ</div>
             <div class="modal-size">
             Size: <b class="selected-size"></b>
                 <ul>        
@@ -458,7 +453,7 @@
                     <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
                 </fieldset>
                 <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
-          <div class="modal-chitiet"><a   href="detail-product/detail-jean1.html">Xem chi tiết >></a></div>  
+          <div class="modal-chitiet"><a   href="detail-product/detail-jean2.html">Xem chi tiết >></a></div>  
         </div>
     </div>
 </div>
@@ -468,13 +463,85 @@
 <div id="modal-jean6" class="container-modal-product">
     <div class="container-modal">
         <div class="container-modal-anh">
-            <img src="assets/images/Jean6.webp" alt="Jean6">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Jean6.webp" alt="Quần jean xanh 3">
+                <img class="slide-image" src="../assets/images/Jean6-1.webp" alt="Quần jean xanh 3-1">
+                <img class="slide-image" src="../assets/images/Jean6-2.webp" alt="Quần jean xanh 3-2">
+                <img class="slide-image" src="../assets/images/Jean6-3.webp" alt="Quần jean xanh 3-3">
+                <a class="prev" onclick="prevSlide()" >&#10094;</a>
+                <a class="next" onclick="nextSlide()" >&#10095;</a>
+            </div>
         </div>
         <div class="container-modal-noidung">
-            <span class="close-modal" onclick="closeModal('modal-jean6')">&times;</span>
-            <h2>Quần Jean Xám Trơn</h2>
-            <p>Giá: 630,000 đ</p>
-            <p>Mô tả sản phẩm chi tiết...</p>
+            <span class="close-modal" onclick="closeModal('modal-jean2')">&times;</span>
+            <div class="modal-title">Quần Jean Nam Xám Trơn Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">630,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="detail-product/detail-jean6.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+<div id="modal-jean8" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Jean8.webp" alt="Quần jean xanh 4">
+                <img class="slide-image" src="../assets/images/Jean8-1.webp" alt="Quần jean xanh 4-1">
+                <img class="slide-image" src="../assets/images/Jean8-2.webp" alt="Quần jean xanh 4-2">
+                <img class="slide-image" src="../assets/images/Jean8-3.webp" alt="Quần jean xanh 4-3">
+                <a class="prev" onclick="prevSlide()" >&#10094;</a>
+                <a class="next" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-jean2')">&times;</span>
+            <div class="modal-title">Quần Jean Nam Trắng Rách Gối Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">530,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="detail-product/detail-jean6.html">Xem chi tiết >></a></div>  
         </div>
     </div>
 </div>
@@ -482,8 +549,8 @@
 
 
     <script src="assets/js/trangchu.js"></script>
-    <script src="assets/js/modal-product.js"></script>
-    <script src="assets/js/detail-product.js"></script>
+ 
+ 
     <script src="assets/js/test.js"></script>
 
 
