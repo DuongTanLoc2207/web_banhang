@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/modal-cart.css">
+    <link rel="stylesheet" href="../assets/css/modal-product.css">
 
 </head>
 <body>
@@ -52,7 +53,7 @@
                 <a href="../detail-product/detail-tay1.html"><img class="product-image" data-product-name="Tay1" src="../assets/images/Tay1.webp" alt="Sản phẩm 1"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay1"></i>
                 <a href="../detail-product/detail-tay1.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -66,7 +67,7 @@
                 <a href="../detail-product/detail-tay2.html"><img class="product-image" data-product-name="Tay2" src="../assets/images/Tay2.webp" alt="Sản phẩm 2"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill"  data-modal="modal-tay2"></i>
                 <a href="../detail-product/detail-tay2.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -80,7 +81,7 @@
                 <a href="../detail-product/detail-tay3.html"><img class="product-image" data-product-name="Tay3" src="../assets/images/Tay3.webp" alt="Sản phẩm 3"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay3"></i>
                 <a href="../detail-product/detail-tay3.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -94,7 +95,7 @@
                 <a href="../detail-product/detail-tay4.html"><img class="product-image" data-product-name="Tay4" src="../assets/images/Tay4.webp" alt="Sản phẩm 4"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay4"></i>
                 <a href="../detail-product/detail-tay4.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -108,7 +109,7 @@
                 <a href="../detail-product/detail-tay5.html"><img class="product-image" data-product-name="Tay5" src="../assets/images/Tay5.webp" alt="Sản phẩm 5"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay5"></i>
                 <a href="../detail-product/detail-tay5.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -122,7 +123,7 @@
                 <a href="../detail-product/detail-tay6.html"><img class="product-image" data-product-name="Tay6" src="../assets/images/Tay6.webp" alt="Sản phẩm 6"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay6"></i>
                 <a href="../detail-product/detail-tay6.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -136,7 +137,7 @@
                 <a href="../detail-product/detail-tay7.html"><img class="product-image" data-product-name="Tay7" src="../assets/images/Tay7.webp" alt="Sản phẩm 7"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay7"></i>
                 <a href="../detail-product/detail-tay7.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -150,7 +151,7 @@
                 <a href="../detail-product/detail-tay8.html"><img class="product-image" data-product-name="Tay8" src="../assets/images/Tay8.webp" alt="Sản phẩm 8"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-tay8"></i>
                 <a href="../detail-product/detail-tay8.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -195,7 +196,358 @@
    
         
     </footer>
+<!--Modal quần tây-->
+<div id="modal-tay1" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay1.webp" alt="Quần tâu xanh 1">
+                <img class="slide-image" src="../assets/images/Tay1-1.webp" alt="Quần tây xanh 1-1">
+                <img class="slide-image" src="../assets/images/Tay1-2.webp" alt="Quần tây xanh 1-2">
+                <img class="slide-image" src="../assets/images/Tay1-3.webp" alt="Quần tây xanh 1-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay1')">&times;</span>
+            <div class="modal-title">Quần Tây Đen Ống Suông - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">300,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay1.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
 
+<div id="modal-tay2" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay2.webp" alt="Quần tây  1">
+                <img class="slide-image" src="../assets/images/Tay2-1.webp" alt="Quần tây 1-1">
+                <img class="slide-image" src="../assets/images/Tay2-2.webp" alt="Quần tây 1-2">
+                <img class="slide-image" src="../assets/images/Tay2-3.webp" alt="Quần tây 1-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay2')">&times;</span>
+            <div class="modal-title">Quần Tây Ghi Ống Suông - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">350,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay2.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+<div id="modal-tay3" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay3.webp" alt="Quần tây  1">
+                <img class="slide-image" src="../assets/images/Tay3-1.webp" alt="Quần tây 1-1">
+                <img class="slide-image" src="../assets/images/Tay3-2.webp" alt="Quần tây 1-2">
+                <img class="slide-image" src="../assets/images/Tay3-3.webp" alt="Quần tây 1-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay3')">&times;</span>
+            <div class="modal-title">Quần Tây Be Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">270,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay3.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+<div id="modal-tay4" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay4.webp" alt="Quần tây  4">
+                <img class="slide-image" src="../assets/images/Tay4-1.webp" alt="Quần tây 4-1">
+                <img class="slide-image" src="../assets/images/Tay4-2.webp" alt="Quần tây 4-2">
+                <img class="slide-image" src="../assets/images/Tay4-3.webp" alt="Quần tây 4-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay4')">&times;</span>
+            <div class="modal-title">Quần Tây Xám Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">320,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay4.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+<div id="modal-tay5" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay5.webp" alt="Quần tây 5">
+                <img class="slide-image" src="../assets/images/Tay5-1.webp" alt="Quần tây 5-1">
+                <img class="slide-image" src="../assets/images/Tay5-2.webp" alt="Quần tây 5-2">
+                <img class="slide-image" src="../assets/images/Tay5-3.webp" alt="Quần tây 5-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay5')">&times;</span>
+            <div class="modal-title">Quần Tây Be Đậm Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">290,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay5.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+<div id="modal-tay6" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay6.webp" alt="Quần tâu xanh 2">
+                <img class="slide-image" src="../assets/images/Tay3-1.webp" alt="Quần tây xanh 2-1">
+                <img class="slide-image" src="../assets/images/Tay3-2.webp" alt="Quần tây xanh 2-2">
+                <img class="slide-image" src="../assets/images/Tay3-3.webp" alt="Quần tây xanh 2-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay3')">&times;</span>
+            <div class="modal-title">Quần Tây Be Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">270,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay3.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+<div id="modal-tay7" class="container-modal-product">
+    <div class="container-modal">
+        <div class="container-modal-anh">
+            <div class="slideshow-container">
+                <img class="slide-image" src="../assets/images/Tay7.webp" alt="Quần tâu xanh 4">
+                <img class="slide-image" src="../assets/images/Tay7-1.webp" alt="Quần tây xanh 4-1">
+                <img class="slide-image" src="../assets/images/Tay7-2.webp" alt="Quần tây xanh 4-2">
+                <img class="slide-image" src="../assets/images/Tay7-3.webp" alt="Quần tây xanh 4-3">
+                <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+            </div>
+        </div>
+        <div class="container-modal-noidung">
+            <span class="close-modal" onclick="closeModal('modal-tay7')">&times;</span>
+            <div class="modal-title">Quần Tây Xám Đậm Ống Ôm - Lova</div>
+            <div><b>Mã:</b> Lova123</div>
+            <div class="modal-price">300,000 đ</div>
+            <div class="modal-size">
+            Size: <b class="selected-size"></b>
+                <ul>        
+                    <button name="29" type="button" class="size-button" data-size="29">29</button>
+                    <button name="30" type="button" class="size-button" data-size="30">30</button>
+                    <button name="31" type="button" class="size-button" data-size="31">31</button>
+                    <button name="32" type="button" class="size-button" data-size="32">32</button>
+                    <button name="33" type="button" class="size-button" data-size="33">33</button>
+                    <button name="34" type="button" class="size-button" data-size="34">34</button>
+                    <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                </ul>
+            </div>
+                <fieldset class="modal-sales">
+                    <legend >Khuyến mãi - Ưu đãi</legend>
+                    <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                    <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                    <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                    <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                    <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                </fieldset>
+                <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+          <div class="modal-chitiet"><a   href="../detail-product/detail-tay7.html">Xem chi tiết >></a></div>  
+        </div>
+    </div>
+</div>
+
+    <div id="modal-tay8" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Tay8.webp" alt="Quần tâu xanh 1">
+                    <img class="slide-image" src="../assets/images/Tay8-1.webp" alt="Quần tây xanh 1-1">
+                    <img class="slide-image" src="../assets/images/Tay8-2.webp" alt="Quần tây xanh 1-2">
+                    <img class="slide-image" src="../assets/images/Tay8-3.webp" alt="Quần tây xanh 1-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-tay8')">&times;</span>
+                <div class="modal-title">Quần Tây Đen Ống Ôm - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">320,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-tay8.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    
+
+    <script src="../assets/js/modal-product.js"></script>
     <script src="../assets/js/modal-cart.js"></script>
     <script src="../assets/js/product.js"></script>
     <scrip src="../assets/js/trangchu.js"></scrip>

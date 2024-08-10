@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/detail-product.css">
     <link rel="stylesheet" href="../assets/font/icons-boostrap/icons-1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/modal-cart.css">
+    <link rel="stylesheet" href="../assets/css/modal-product.css">
 
 </head>
 <body>
@@ -51,7 +52,7 @@
                 <a href="../detail-product/detail-short1.html"><img class="product-image" data-product-name="Short1" src="../assets/images/Short1.webp" alt="Sản phẩm 1"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short1"></i>
                 <a href="../detail-product/detail-short1.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -65,7 +66,7 @@
                 <a href="../detail-product/detail-short2.html"><img class="product-image" data-product-name="Short2" src="../assets/images/Short2.webp" alt="Sản phẩm 2"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short2"></i>
                 <a href="../detail-product/detail-short2.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -79,7 +80,7 @@
                 <a href="../detail-product/detail-short3.html"><img class="product-image" data-product-name="Short3" src="../assets/images/Short3.webp" alt="Sản phẩm 3"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short3"></i>
                 <a href="../detail-product/detail-short3.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -93,7 +94,7 @@
                 <a href="../detail-product/detail-short4.html"><img class="product-image" data-product-name="Short4" src="../assets/images/Short4.webp" alt="Sản phẩm 4"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short4"></i>
                 <a href="../detail-product/detail-short4.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -107,7 +108,7 @@
                 <a href="../detail-product/detail-short5.html"><img class="product-image" data-product-name="Short5" src="../assets/images/Short5.webp" alt="Sản phẩm 5"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short5"></i>
                 <a href="../detail-product/detail-short5.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -121,7 +122,7 @@
                 <a href="../detail-product/detail-short6.html"><img class="product-image" data-product-name="Short6" src="../assets/images/Short6.webp" alt="Sản phẩm 6"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short6"></i>
                 <a href="../detail-product/detail-short6.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -135,7 +136,7 @@
                 <a href="../detail-product/detail-short7.html"><img class="product-image" data-product-name="Short7" src="../assets/images/Short7.webp" alt="Sản phẩm 7"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short7"></i>
                 <a href="../detail-product/detail-short7.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -149,7 +150,7 @@
                 <a href="../detail-product/detail-short8.html"><img class="product-image" data-product-name="Short8" src="../assets/images/Short8.webp" alt="Sản phẩm 8"></a>
             </div>
             <div class="cart-eye">
-                <i class="bi bi-cart-plus-fill"></i>
+                <i class="bi bi-cart-plus-fill" data-modal="modal-short8"></i>
                 <a href="../detail-product/detail-short8.html"><i class="bi bi-eye"></i></a>
             </div>
             <div class="jean_product_content">
@@ -194,6 +195,354 @@
         
     </footer>
 
+    <!--Modal quần short-->
+   
+
+    <div id="modal-short1" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short1.webp" alt="Quần short xanh 2">
+                    <img class="slide-image" src="../assets/images/Short1-1.webp" alt="Quần short xanh 2-1">
+                    <img class="slide-image" src="../assets/images/Short1-2.webp" alt="Quần short xanh 2-2">
+                    <img class="slide-image" src="../assets/images/Short1-3.webp" alt="Quần short xanh 2-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short1')">&times;</span>
+                <div class="modal-title">Quần Short Đen - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">350,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short1.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short2" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short2.webp" alt="Quần short xanh 3">
+                    <img class="slide-image" src="../assets/images/Short2-1.webp" alt="Quần short xanh 3-1">
+                    <img class="slide-image" src="../assets/images/Short2-2.webp" alt="Quần short xanh 3-2">
+                    <img class="slide-image" src="../assets/images/Short2-3.webp" alt="Quần short xanh 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short2')">&times;</span>
+                <div class="modal-title">Quần Short Xám - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">320,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short2.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short3" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short3.webp" alt="Quần short 3">
+                    <img class="slide-image" src="../assets/images/Short3-1.webp" alt="Quần short 3-1">
+                    <img class="slide-image" src="../assets/images/Short3-2.webp" alt="Quần short 3-2">
+                    <img class="slide-image" src="../assets/images/Short3-3.webp" alt="Quần short 3-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short3')">&times;</span>
+                <div class="modal-title">Quần Short Xám Xanh - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">290,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short3.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short4" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short4.webp" alt="Quần short 4">
+                    <img class="slide-image" src="../assets/images/Short4-1.webp" alt="Quần short 4-1">
+                    <img class="slide-image" src="../assets/images/Short4-2.webp" alt="Quần short 4-2">
+                    <img class="slide-image" src="../assets/images/Short4-3.webp" alt="Quần short 4-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short4')">&times;</span>
+                <div class="modal-title">Quần Short Xanh Lam- Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">250,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short4.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short5" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short5.webp" alt="Quần short 5">
+                    <img class="slide-image" src="../assets/images/Short5-1.webp" alt="Quần short 5-1">
+                    <img class="slide-image" src="../assets/images/Short5-2.webp" alt="Quần short 5-2">
+                    <img class="slide-image" src="../assets/images/Short5-3.webp" alt="Quần short 5-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short5')">&times;</span>
+                <div class="modal-title">Quần Short Tây Trắng - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">400,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short5.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short6" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short6.webp" alt="Quần short xanh 4">
+                    <img class="slide-image" src="../assets/images/Short6-1.webp" alt="Quần short xanh 4-1">
+                    <img class="slide-image" src="../assets/images/Short6-2.webp" alt="Quần short xanh 4-2">
+                    <img class="slide-image" src="../assets/images/Short6-3.webp" alt="Quần short xanh 4-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short6')">&times;</span>
+                <div class="modal-title">Quần Short Xanh- Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">290,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short6.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short7" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short7.webp" alt="Quần short xanh 1">
+                    <img class="slide-image" src="../assets/images/Short7-1.webp" alt="Quần short xanh 1-1">
+                    <img class="slide-image" src="../assets/images/Short7-2.webp" alt="Quần short xanh 1-2">
+                    <img class="slide-image" src="../assets/images/Short7-3.webp" alt="Quần short xanh 1-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short7')">&times;</span>
+                <div class="modal-title">Quần Short Ghi - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">320,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short7.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-short8" class="container-modal-product">
+        <div class="container-modal">
+            <div class="container-modal-anh">
+                <div class="slideshow-container">
+                    <img class="slide-image" src="../assets/images/Short8.webp" alt="Quần short 8">
+                    <img class="slide-image" src="../assets/images/Short8-1.webp" alt="Quần short 8-1">
+                    <img class="slide-image" src="../assets/images/Short8-2.webp" alt="Quần short 8-2">
+                    <img class="slide-image" src="../assets/images/Short8-3.webp" alt="Quần short 8-3">
+                    <a class="prev-modal" onclick="prevSlide()" >&#10094;</a>
+                    <a class="next-modal" onclick="nextSlide()" >&#10095;</a>
+                </div>
+            </div>
+            <div class="container-modal-noidung">
+                <span class="close-modal" onclick="closeModal('modal-short8')">&times;</span>
+                <div class="modal-title">Quần Short Xanh Lục - Lova</div>
+                <div><b>Mã:</b> Lova123</div>
+                <div class="modal-price">330,000 đ</div>
+                <div class="modal-size">
+                Size: <b class="selected-size"></b>
+                    <ul>        
+                        <button name="29" type="button" class="size-button" data-size="29">29</button>
+                        <button name="30" type="button" class="size-button" data-size="30">30</button>
+                        <button name="31" type="button" class="size-button" data-size="31">31</button>
+                        <button name="32" type="button" class="size-button" data-size="32">32</button>
+                        <button name="33" type="button" class="size-button" data-size="33">33</button>
+                        <button name="34" type="button" class="size-button" data-size="34">34</button>
+                        <button name="35" type="button" class="size-button" data-size="35">35</button>            
+                    </ul>
+                </div>
+                    <fieldset class="modal-sales">
+                        <legend >Khuyến mãi - Ưu đãi</legend>
+                        <div>Miễn phí vận chuyển cho đơn từ 399K</div>
+                        <div>Nhập mã <b>S10</b> GIẢM 10% tối đa 10K</div>
+                        <div>Nhập mã <b>S40</b> GIẢM 40% tối đa 599K</div>
+                        <div>Nhập mã <b>S60</b> GIẢM 60% tối đa 799K</div>
+                        <div>Nhập mã <b>S80</b> GIẢM 80% tối đa 999K</div>
+                    </fieldset>
+                    <div class="modal-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="modal-so"><input class="modal-addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></div>
+              <div class="modal-chitiet"><a   href="../detail-product/detail-short8.html">Xem chi tiết >></a></div>  
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/modal-product.js"></script>
     <script src="../assets/js/modal-cart.js"></script>
     <script src="../assets/js/product.js"></script>
     <scrip src="../assets/js/trangchu.js"></scrip>

@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Đăng ký sự kiện cho các nút next và prev
-        modal.querySelector('.prev').addEventListener('click', nextSlide);
-        modal.querySelector('.next').addEventListener('click', prevSlide);
+        modal.querySelector('.prev-modal').addEventListener('click', nextSlide);
+        modal.querySelector('.next-modal').addEventListener('click', prevSlide);
 
         showSlide(currentSlide);
 

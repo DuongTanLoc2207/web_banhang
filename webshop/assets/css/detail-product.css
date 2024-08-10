@@ -260,6 +260,7 @@ header {
 
 
 .under_product{
+    background-color:white;
     display:flex;
     margin:30px 20px;
     width:90%;
