@@ -66,6 +66,7 @@ ul {
 }
 .nav-icon a:hover{
     color:yellow;
+    cursor: pointer;
 }
 
 li a {

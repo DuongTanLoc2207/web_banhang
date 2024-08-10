@@ -124,7 +124,6 @@ table {
 .quantity-area-cartmini .quantity-mini {
     background: #fff;
     font-weight: 600;
-    height: 33px;
     text-align: center;
     width: 33px;
     border: 1px solid #e1e1e1;
@@ -132,7 +131,6 @@ table {
     border-right: none;
     border-radius: 0;
     float: left;
-    -webkit-appearance: none;
     font-size: 15px;
     color: black;
     padding: 0;
