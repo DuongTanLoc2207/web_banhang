@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
                 </td>
                 <td class="item">
-                    <a id = "link-modal" class="pro-title-view" href="#">${item.name}</a>
+                    <a id = "link-modal" class="pro-title-view" href="#">${item.name}</a> <br>   
+                    <span>Mã sản phẩm: ${item.id}</span>
                     <span class="size-item">Size: ${item.size}</span>
                     <div class="quantity-area-cartmini">
                         <input type="button" value="–" class="qty-btn btn-left-quantity" data-id="${item.id}" data-size="${item.size}">

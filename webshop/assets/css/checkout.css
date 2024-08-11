@@ -137,11 +137,6 @@ body {
     text-align: center;
 }
 
-.cart-item .stt {
-    flex-basis: 50px; 
-    flex-grow: 0;
-}
-
 .cart-item .title {
     flex-basis: 150px; 
     flex-grow: 0;
@@ -359,11 +354,9 @@ img {
 
 footer {
     display: flex; 
-    height:230px;
     padding: 20px; 
     background-color:#001f5d; 
     border-top: 1px solid #ccc; 
-  
     bottom: 0;
     left: 0;
     width: 100%;
@@ -374,7 +367,6 @@ footer {
 }
 .diachi img{
     border-radius:50%;
-    margin-left:70px;
     margin-top:30px;
 }
 .diachi img:hover{
@@ -382,22 +374,21 @@ footer {
 }
 
 .diachi{
-    padding-left:50px;
     width:35%;
-    
+    text-align: center;
+    margin-left: 30px;
 }
 
 .fanpage{
     width:30%;
-    margin-left:30px;
+    margin-left:50px;
 }
 
 .fanpage img{
     border-radius:50%;
     height:130px;
     margin-top:50px;
-    margin-left:50px;
-    
+    margin-left:40px;
 }
 
 .fanpage img:hover{
@@ -406,27 +397,15 @@ footer {
 
 
 .zalo{
-    width:30%;
-    margin-left:30px;
+    width:50%;
+    margin-left:50px;
     padding-right:30px;
+    text-align: center;
 }
 
 .zalo img{
     margin-top:30px;
-    margin-left:45px;
-}
-
-
-
-.imggioithieu{
-    width:100%;
-    padding-top:20px;
-    
-}
-
-.imggioithieu img{
-    width:100%;
-
+    margin-left:170px;
 }
 
 

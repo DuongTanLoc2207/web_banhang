@@ -40,7 +40,7 @@ function loadCartItems() {
             const cartItemHTML = `
                 <div class="cart-item" id="row_${index}">
                     <div class="thumbnail"><img src="${item.image}" alt="${item.name}"></div>
-                    <div class="title">${item.name} <br> Size: ${item.size}</div>
+                    <div class="title">${item.name} <br> <span class = "MaSP"> Mã sản phẩm: ${item.id}</span> <br>  Size: ${item.size}</div>
                     <div class="price" id="price_${index}" data-price="${item.price}">${item.price.toLocaleString()} đ</div>
                     <div class="quantity">
                         <button class="btn btn-light" onclick="addMoreCart(${index}, -1)">-</button>
@@ -95,7 +95,9 @@ function updateCartItem(id, quantity) {
     }
 
     updateCartTotal(id);
-    updateItemCount(); // Cập nhật số lượng sản phẩm sau khi thay đổi
+    updateItemCount();
+    
+    
 }
 
 function updateCartTotal(id) {

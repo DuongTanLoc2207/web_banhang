@@ -24,7 +24,7 @@
     position: relative;
     transform: translateY(-100%); /* Bắt đầu từ ngoài màn hình */
     opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Thêm chuyển đổi */
+    transition: transform 0.1s ease, opacity 0.1s ease; /* Thêm chuyển đổi */
     display: flex;
     gap: 20px;
     box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
@@ -186,4 +186,9 @@
     font-size: 20px;
     margin-top: 25px;
     margin-left: 100px;
+}
+
+.modal-chitiet a {
+    text-decoration: none;
+    color: #032982;
 }
