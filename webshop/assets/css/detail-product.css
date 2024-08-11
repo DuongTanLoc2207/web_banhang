@@ -223,7 +223,7 @@ header {
 }
 
 .addcart {
-    width: 65%;
+    width: 50%;
     padding:10px 0px;
     font-size: 25px;
     display: inline-flex;
@@ -247,7 +247,7 @@ header {
     
     border: 1px solid auto;
     background-color: #02125c;
-    margin-top:10px;
+    margin-top:15px;
     font-size: 30px;
     padding:5px 0px;
     border-radius:5%;
@@ -343,3 +343,59 @@ header {
     text-align: start;
     color:white;
 }
+
+.font-size-soluong {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.quantity-container {
+    background-color:white;
+    display: flex;
+    height:55px;
+    width:150px;
+    align-items: center;
+    border: 1px solid #000000; /* Border around the quantity section */
+    border-radius: 5px;
+    padding: 0px;
+    margin-right: 20px; 
+    margin-left:5px;
+    margin-top:15px;/* Space between quantity and "Add to Cart" button */
+  
+}
+
+.quantity-button {
+    
+   border:none;
+    color:20px;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0;
+}
+
+.quantity-display {
+    font-size: 20px;
+    padding:0px;
+    color:#2F80ED;
+}
+
+.addcart {
+    border-width:1,3px;
+    margin-top:15px;
+    width:410px;
+    height:55px;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 3%;
+    color: #2F80ED;
+    background-color: white;
+    cursor: pointer;
+}
+
+.addcart:hover {
+    background-color: #02125c;
+    color: white;
+}
+

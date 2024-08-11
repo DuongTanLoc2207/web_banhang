@@ -6,23 +6,27 @@ document.addEventListener('DOMContentLoaded', function() {
     sizeChartImage.addEventListener('click', function() {
         sizeChartModal.style.display = 'flex';
         setTimeout(() => {
-            sizeChartModal.classList.add('show'); // Thêm lớp 'show' để kích hoạt hiệu ứng
-        }, 10); // Sử dụng setTimeout để đảm bảo rằng thuộc tính display đã được áp dụng trước khi thêm lớp 'show'
+            sizeChartModal.classList.add('show');
+        }, 10);
     });
 
     closeSizeChart.addEventListener('click', function() {
-        sizeChartModal.classList.remove('show'); // Loại bỏ lớp 'show' để ẩn hiệu ứng
+        sizeChartModal.classList.remove('show');
+        sizeChartModal.classList.add('closing');
         setTimeout(() => {
             sizeChartModal.style.display = 'none';
-        }, 500); // Chờ thời gian hiệu ứng kết thúc trước khi ẩn modal hoàn toàn
+            sizeChartModal.classList.remove('closing');
+        }, 0); // Thời gian delay là 0 để loại bỏ ngay lập tức
     });
 
     window.addEventListener('click', function(event) {
         if (event.target === sizeChartModal) {
-            sizeChartModal.classList.remove('show'); // Loại bỏ lớp 'show' để ẩn hiệu ứng
+            sizeChartModal.classList.remove('show');
+            sizeChartModal.classList.add('closing');
             setTimeout(() => {
                 sizeChartModal.style.display = 'none';
-            }, 500); // Chờ thời gian hiệu ứng kết thúc trước khi ẩn modal hoàn toàn
+                sizeChartModal.classList.remove('closing');
+            }, 0);
         }
     });
 });

@@ -1,6 +1,6 @@
 /* CSS for Image Modal */
 .modal-image {
-    position: fixed; /* Đặt modal cố định trên màn hình */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,38 +8,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, 0.75); /* Làm tối nền */
+    background-color: rgba(0, 0, 0, 0.75);
     z-index: 1000;
-    display: none; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s; /* Chuyển đổi opacity và visibility */
 }
 
-/* Thêm hiệu ứng slide xuống cho modal */
+.modal-image.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+/* Modal content */
 .modal-content-image {
     width: 40%;
-    max-width: 600px; /* Điều chỉnh kích thước tối đa nếu cần */
+    max-width: 600px;
     height: 600px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
-    transform: translateY(-100%); /* Bắt đầu từ ngoài màn hình */
+    top:50px;
+    left:30%;
+    transform: translateY(-100%);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Thêm chuyển đổi */
+    transition: transform 0.5s ease, opacity 0.5s ease;
     display: flex;
     gap: 20px;
-    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
-    overflow: hidden; 
-    left:30%;
-    top:50px;
-    transform:translateX(-50%);
-    transform:translateY(-50%);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-/* Khi modal hiển thị, áp dụng hiệu ứng */
 .modal-image.show .modal-content-image {
-    transform: translateY(0); /* Trượt xuống từ trên */
+    transform: translateY(0);
     opacity: 1;
 }
 

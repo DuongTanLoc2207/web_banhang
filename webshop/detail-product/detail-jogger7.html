@@ -87,7 +87,15 @@
                 </ul>
             </div>
           
-            <span class="font-size-soluong">Số lượng<input type="number" id="soluong" name="soluong" value="1" min="1" step="1" class="container_soluong"><input class="addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ " onclick=""></span>
+            <span class="font-size-soluong">
+                <div class="quantity-container">
+                    <button class="quantity-button" id="decreaseQuantity">-</button>
+                    <span id="quantityDisplay" class="quantity-display">1</span>
+                    <button class="quantity-button" id="increaseQuantity">+</button>
+                </div>
+                <input type="hidden" id="soluong" name="soluong" value="1">
+                <input class="addcart" id="addcart" name="addcart" type="button" value="Thêm vào giỏ">
+            </span>
        
             
             <a href="javascript:void(0);"><div class="container_mua"> <div class="container_mua_content" id="buyNowBtn">MUA NGAY</div></div></a>
@@ -165,5 +173,6 @@
     <script src="../assets/js/modal-imgshow.js"></script>
     <script src="../assets/js/modal-cart.js"></script>
     <script src="../assets/js/detail-product.js"></script>
+    <script src="../assets/js/soluong.js"></script>
 </body>
 </html>
