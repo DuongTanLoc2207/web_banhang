@@ -125,13 +125,11 @@
 
 .modal-size ul{
     background-color:white;
-    margin-left:10px;
-    
-   
 }
 .modal-size button{
     font-size:15px;
     margin:4px;
+    width: 50px;
 }
 
 
