@@ -76,6 +76,10 @@ header {
     transition: opacity 1s ease-in-out;
 }
 
+.slide-image.show {
+    opacity: 1;
+}
+
 
 .prev, .next {
     cursor: pointer;

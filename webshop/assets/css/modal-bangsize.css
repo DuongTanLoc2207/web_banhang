@@ -7,13 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
     background-color: rgba(0, 0, 0, 0.75); /* Làm tối nền */
     z-index: 1000;
     display: none; 
-    
 }
 
+/* Thêm hiệu ứng slide xuống cho modal */
 .modal-content-size-chart {
     width: 70%;
     max-width: 800px; /* Điều chỉnh kích thước tối đa nếu cần */
@@ -23,14 +22,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
-    left:50%;
-    top:50px;
-    transform:translateX(-50%);
-   
+    transform: translateY(-100%); /* Bắt đầu từ ngoài màn hình */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Thêm chuyển đổi */
     display: flex;
     gap: 20px;
     box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
     overflow: hidden; 
+}
+
+/* Khi modal hiển thị, áp dụng hiệu ứng */
+.modal-size-chart.show .modal-content-size-chart {
+    transform: translateY(0); /* Trượt xuống từ trên */
+    opacity: 1;
 }
 
 .modal-content-size-chart img {
@@ -44,11 +48,11 @@
     font-weight: bold;
     cursor: pointer;
     position: absolute;
-    top:10px;
-    right:20px;
+    top: 10px;
+    right: 20px;
 }
 
-.close-size-chart:hover{
+.close-size-chart:hover {
     color: #000000;
     text-decoration: none;
     cursor: pointer;

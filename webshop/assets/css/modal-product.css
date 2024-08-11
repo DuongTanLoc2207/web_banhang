@@ -7,12 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
     background-color: rgba(0, 0, 0, 0.75); /* Làm tối nền */
     z-index: 1000;
     display: none; /* Ẩn modal mặc định */
 }
 
+/* Thêm hiệu ứng slide xuống cho modal */
 .container-modal {
     width: 60%;
     max-width: 1000px; /* Điều chỉnh kích thước tối đa nếu cần */
@@ -22,27 +22,32 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
-    left:50%;
-    top:30px;
-    transform:translateX(-50%);
-   
+    transform: translateY(-100%); /* Bắt đầu từ ngoài màn hình */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Thêm chuyển đổi */
     display: flex;
     gap: 20px;
     box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
     overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài */
 }
 
+/* Khi modal hiển thị, áp dụng hiệu ứng */
+.container-modal-product.show .container-modal {
+    transform: translateY(0); /* Trượt xuống từ trên */
+    opacity: 1;
+}
+
 .container-modal-anh {
     width: 50%;
     height: 100%;
-    margin:5px 10px ;
-   
+    margin: 5px 10px;
+    overflow: hidden; /* Đảm bảo ảnh không bị tràn ra ngoài */
 }
 
 .container-modal-anh img {
     width: 100%;
-    height: 90%;
-    object-fit: cover;
+    height: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều cao của container */
+    object-fit: cover; /* Đảm bảo ảnh không bị bóp méo và phủ kín container */
     border-radius: 8px;
 }
 
@@ -71,13 +76,15 @@
 }
 
 .container-modal-noidung {
-    width: 60%;
+    width: 50%; /* Sửa thành 50% để đồng nhất với container-modal-anh */
     height: 100%;
     overflow-y: auto;
     padding: 10px;
-    padding-left:0;
+    padding-left: 0;
     box-sizing: border-box;
-    margin-left:0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .close-modal {
@@ -86,111 +93,97 @@
     right: 5px;
     font-size: 24px;
     cursor: pointer;
-    border:1px solid black;
-    width:30px;
-    background:rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 30px;
+    background: rgb(0, 0, 0);
     border-radius: 50%;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
 }
 
-.close-modal:hover{
-    color:red;
+.close-modal:hover {
+    color: red;
 }
 
-.modal-title{
-    font-size:23px; 
-    
-
+.modal-title {
+    font-size: 23px;
 }
 
-.modal-id{
-    margin-top:15px;
+.modal-id {
+    margin-top: 15px;
 }
 
-.modal-price{
-    color:rgb(5, 91, 144);
-    margin-top:15px;
-    font-size:18px;
-   
+.modal-price {
+    color: rgb(5, 91, 144);
+    margin-top: 15px;
+    font-size: 18px;
 }
 
-.modal-size{
-    margin-top:15px;
-    border:1px solid rgb(192, 190, 190);
-    font-size:18px;
+.modal-size {
+    margin-top: 15px;
+    border: 1px solid rgb(192, 190, 190);
+    font-size: 18px;
 }
 
-
-
-.modal-size ul{
-    background-color:white;
+.modal-size ul {
+    background-color: white;
 }
-.modal-size button{
-    font-size:15px;
-    margin:4px;
+
+.modal-size button {
+    font-size: 15px;
+    margin: 4px;
     width: 50px;
 }
 
-
-.modal-sales{
-    margin-top:15px;
-    border:1px dashed red;
-
-
+.modal-sales {
+    margin-top: 15px;
+    border: 1px dashed red;
 }
 
-.modal-sales legend{
-    font-size:20px;
-    font-weight:bold;
+.modal-sales legend {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.modal-sales div{
-    margin:5px;
+.modal-sales div {
+    margin: 5px;
 }
 
-.modal-soluong{
-    font-size:22px;
-    margin-top:15px;
+.modal-soluong {
+    font-size: 22px;
+    margin-top: 15px;
 }
 
-.modal-so{
-    width:45px;
-    padding:12px 0px ;
-    text-align:center;
-    border:2px solid black;
+.modal-so {
+    width: 45px;
+    padding: 12px 0px;
+    text-align: center;
+    border: 2px solid black;
     border-radius: 5%;
-    color:#032982;
-    font-size:15px;
-    margin-left:5px;
+    color: #032982;
+    font-size: 15px;
+    margin-left: 5px;
 }
 
-.modal-addcart{
-    width:53%;
-    padding:11px 0px;
-    margin-left:10px;
-    border:2px solid rgb(5, 5, 137);
-    border-radius:5%;
-    font-size:20px;
-    background-color:white;
-    color:#032982;
+.modal-addcart {
+    width: 53%;
+    padding: 11px 0px;
+    margin-left: 10px;
+    border: 2px solid rgb(5, 5, 137);
+    border-radius: 5%;
+    font-size: 20px;
+    background-color: white;
+    color: #032982;
     cursor: pointer;
-    
 }
 
-.modal-addcart:hover{
-    background-color:#032982;
-    color:white;
+.modal-addcart:hover {
+    background-color: #032982;
+    color: white;
 }
 
-.modal-chitiet{
-    font-size:20px;
-    margin-top:25px;
-    margin-left:100px;
-
+.modal-chitiet {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 100px;
 }
-
-
-
-
-

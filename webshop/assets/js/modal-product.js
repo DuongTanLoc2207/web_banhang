@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
         if (modal) {
-            modal.style.display = 'block';
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.classList.add('show'); // Thêm lớp 'show' để kích hoạt hiệu ứng
+            }, 10); // Sử dụng setTimeout để đảm bảo rằng thuộc tính display đã được áp dụng trước khi thêm lớp 'show'
             setupSlideshow(modal); // Setup slideshow khi modal mở
         } else {
             console.error(`Modal with id ${modalId} not found.`);
@@ -92,7 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeModal(modalId) {
         const modal = document.getElementById(modalId);
         if (modal) {
-            modal.style.display = 'none';
+            modal.classList.remove('show'); // Loại bỏ lớp 'show' để ẩn hiệu ứng
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 500); // Chờ thời gian hiệu ứng kết thúc trước khi ẩn modal hoàn toàn
         } else {
             console.error(`Modal with id ${modalId} not found.`);
         }
@@ -119,14 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (event.target.classList.contains('container-modal-product')) {
             closeModal(event.target.id);
         }
-    });
-
-    // Đăng ký sự kiện cho các nút giỏ hàng
-    document.querySelectorAll('.bi-cart-plus-fill').forEach(button => {
-        button.addEventListener('click', function() {
-            const modalId = this.getAttribute('data-modal');
-            openModal(modalId);
-        });
     });
 
     // Đăng ký sự kiện cho nút thêm vào giỏ hàng trong modal
