@@ -38,24 +38,27 @@
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="text-center">Đăng ký tài khoản</h3>
-                <h5 class="text-center" style="color: red;">
             </div>
             <div class="panel-body">
-                <form method="post" action="process_form_register.php" onsubmit="return validateForm();">
+                <form method="post" onsubmit="return validateForm();">
                     <div class="form-group">
                         <input placeholder="Họ và tên" required="true" type="text" class="form-control" id="usr" name="fullname">
+                        <div id="fullname-error" class="error-message"></div>
                     </div>
                     <div class="form-group">
                         <input placeholder="Email" required="true" type="email" class="form-control" id="email" name="email">
+                        <div id="email-error" class="error-message"></div>
                     </div>
                     <div class="form-group">
                         <input placeholder="Mật khẩu" required="true" type="password" class="form-control" id="pwd" name="password" minlength="6">
+                        <div id="password-error" class="error-message"></div>
                     </div>
                     <div class="form-group">
                         <input placeholder="Xác nhận mật khẩu" required="true" type="password" class="form-control" id="confirmation_pwd" name="confirmation_pwd" minlength="6">
+                        <div id="confirmation-error" class="error-message"></div>
                     </div>
                     <div class="form-group text-center">
-                        <button class="btn btn-success">Đăng Ký</button>
+                        <button class="btn btn-success" type="submit">Đăng Ký</button>
                         <a href="./login.html" class="link">Tôi đã có tài khoản</a>
                     </div>
                 </form>
@@ -78,5 +81,7 @@
             <a href="https://www.facebook.com/16072004xx/" target="_blank"><img src="../../assets/images/Fanpage.jpg"></a>
         </div>      
     </footer>
+
+    <script src="../../assets/js/register.js"></script>
 </body>
 </html>
