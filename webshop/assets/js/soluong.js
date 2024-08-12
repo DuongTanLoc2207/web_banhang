@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const quantityDisplay = document.getElementById('quantityDisplay');
-    const quantityInput = document.getElementById('soluong');
-    const decreaseButton = document.getElementById('decreaseQuantity');
-    const increaseButton = document.getElementById('increaseQuantity');
+    const quantityDisplay = document.getElementById('modal-quantityDisplay');
+    const quantityInput = document.getElementById('modal-soluong');
+    const decreaseButton = document.getElementById('modal-decreaseQuantity');
+    const increaseButton = document.getElementById('modal-increaseQuantity');
 
     let quantity = parseInt(quantityDisplay.textContent, 10);
 

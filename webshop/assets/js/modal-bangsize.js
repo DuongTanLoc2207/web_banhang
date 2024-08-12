@@ -1,32 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const sizeChartImage = document.getElementById('sizeChartImage');
-    const sizeChartModal = document.getElementById('sizeChartModal');
-    const closeSizeChart = document.querySelector('.close-size-chart');
+    const sizeChartImages = document.querySelectorAll('.sizeChartImage');
 
-    sizeChartImage.addEventListener('click', function() {
-        sizeChartModal.style.display = 'flex';
-        setTimeout(() => {
-            sizeChartModal.classList.add('show');
-        }, 10);
+    sizeChartImages.forEach(image => {
+        const targetModalId = image.getAttribute('data-target');
+        const targetModal = document.getElementById(targetModalId);
+
+        image.addEventListener('click', function() {
+            targetModal.style.display = 'flex';
+            setTimeout(() => {
+                targetModal.classList.add('show');
+            }, 10);
+        });
     });
 
-    closeSizeChart.addEventListener('click', function() {
-        sizeChartModal.classList.remove('show');
-        sizeChartModal.classList.add('closing');
-        setTimeout(() => {
-            sizeChartModal.style.display = 'none';
-            sizeChartModal.classList.remove('closing');
-        }, 0); // Thời gian delay là 0 để loại bỏ ngay lập tức
+    document.querySelectorAll('.close-size-chart').forEach(closeButton => {
+        closeButton.addEventListener('click', function() {
+            const modal = closeButton.closest('.modal-size-chart');
+            modal.classList.remove('show');
+            modal.classList.add('closing');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.classList.remove('closing');
+            }, 0);
+        });
     });
 
     window.addEventListener('click', function(event) {
-        if (event.target === sizeChartModal) {
-            sizeChartModal.classList.remove('show');
-            sizeChartModal.classList.add('closing');
-            setTimeout(() => {
-                sizeChartModal.style.display = 'none';
-                sizeChartModal.classList.remove('closing');
-            }, 0);
-        }
+        document.querySelectorAll('.modal-size-chart').forEach(modal => {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+                modal.classList.add('closing');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    modal.classList.remove('closing');
+                }, 0);
+            }
+        });
     });
 });
