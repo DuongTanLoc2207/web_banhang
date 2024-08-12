@@ -42,7 +42,9 @@ function loadCartItems() {
 
             const cartItemHTML = `
                 <div class="cart-item" id="row_${index}">
-                    <div class="thumbnail"><img src="${item.image}" alt="${item.name}"></div>
+                    <a href = "${item.link}">
+                        <div class="thumbnail"><img src="${item.image}" alt="${item.name}"></div>
+                    </a>
                     <div class="title">${item.name} <br> <span class = "MaSP"> Mã sản phẩm: ${item.id}</span> <br>  Size: ${item.size}</div>
                     <div class="price" id="price_${index}" data-price="${item.price}">${item.price.toLocaleString()} đ</div>
                     <div class="quantity">

@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
             price: parseInt(productElement.getAttribute('data-price')),
             size: document.querySelector('.size-button.selected')?.getAttribute('data-size'),
             quantity: parseInt(document.getElementById('soluong').value),
-            image: productElement.getAttribute('data-image')
+            image: productElement.getAttribute('data-image'),
+            link: productElement.getAttribute('data-link')  // Lấy link sản phẩm
         };
 
         if (!product.size) {
@@ -142,7 +143,8 @@ document.addEventListener('DOMContentLoaded', function() {
             price: parseInt(productElement.getAttribute('data-price')),
             size: document.querySelector('.size-button.selected')?.getAttribute('data-size'),
             quantity: parseInt(document.getElementById('soluong').value),
-            image: productElement.getAttribute('data-image')
+            image: productElement.getAttribute('data-image'),
+            link: productElement.getAttribute('data-link')  // Lấy link sản phẩm
         };
 
         if (!product.size) {

@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
             itemElement.classList.add('list-item');
             itemElement.innerHTML = `
                 <td class="img">
-                    <a href="#">
+                    <a href="${item.link}">
                         <img src="${item.image}" alt="${item.name}">
                     </a>
                 </td>
                 <td class="item">
-                    <a id = "link-modal" class="pro-title-view" href="#">${item.name}</a> <br>   
+                    <a id = "link-modal" class="pro-title-view" href="${item.link}">${item.name}</a> <br>   
                     <span>Mã sản phẩm: ${item.id}</span>
                     <span class="size-item">Size: ${item.size}</span>
                     <div class="quantity-area-cartmini">

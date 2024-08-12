@@ -170,6 +170,10 @@ table {
     text-decoration: none;
 }
 
+#link-modal:hover {
+    color: orangered;
+}
+
 #cart-mini-wanda #cart-view tr td.item {
     padding: 10px 0;
     position: relative;

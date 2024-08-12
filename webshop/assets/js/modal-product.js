@@ -138,7 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 price: parseInt(productElement.getAttribute('data-price')),
                 size: modal.querySelector('.size-button.selected')?.getAttribute('data-size'),
                 quantity: parseInt(modal.querySelector('.modal-so').value),
-                image: productElement.getAttribute('data-image')
+                image: productElement.getAttribute('data-image'),
+                link: productElement.getAttribute('data-link')  // Lấy link sản phẩm
             };
 
             if (!product.size) {
