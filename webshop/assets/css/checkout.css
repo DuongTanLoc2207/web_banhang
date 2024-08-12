@@ -373,6 +373,10 @@ footer {
     border :4px solid yellow;
 }
 
+.diachi a {
+    display: block;
+}
+
 .diachi{
     width:35%;
     text-align: center;
@@ -404,8 +408,9 @@ footer {
 }
 
 .zalo img{
+    display: block;
     margin-top:30px;
-    margin-left:170px;
+    margin-left:180px;
 }
 
 
