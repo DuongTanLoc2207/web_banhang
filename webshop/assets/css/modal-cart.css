@@ -38,7 +38,7 @@
 }
 
 #cart-mini-wanda {
-    max-width: 485px;
+    max-width: 540px;
 }
 
 .img > a > img {
@@ -151,6 +151,7 @@ table {
     opacity: 1;
     margin-top: 4px;
     margin-left: 10px;
+    color: #001f5d;
 }
 
 #cart-mini-wanda #cart-view tr td.item .remove-cart {
@@ -237,7 +238,7 @@ table tr td {
     color: #000000;
     border-color: #000000;
     border-radius: 8px;
-    width: 160px;
+    width: 180px;
 }
 
 #cart-mini-wanda .table-total tr td .btn.wanda-checkout-url:hover {
@@ -248,7 +249,7 @@ table tr td {
 
 #cart-mini-wanda .table-total tr td .btn.btn.wanda-cart-url{
     margin-left: 10px;
-    width: 160px;
+    width: 180px;
 }
 
 .size-item {
