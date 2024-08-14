@@ -33,9 +33,32 @@
         </nav>
     </header>
 
-    <div class="imggioithieu">
-        <img src="assets/images/AnhGioiThieu_NenTrang.jpg" alt="Ảnh giới thiệu LovaStore">
+    <div class="slideshow-container-index">
+        <div class="mySlides fade">
+            <img src="assets/images/AnhGioiThieu1.jpg" alt="Ảnh giới thiệu LovaStore" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="assets/images/AnhGioiThieu2.jpg" alt="Ảnh khác 1" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="assets/images/AnhGioiThieu3.jpg" alt="Ảnh khác 2" style="width:100%">
+        </div>
+    
+        <a class="prevslide">&#10094;</a>
+        <a class="nextslide">&#10095;</a>
+    
+        <!-- Nút chỉ số -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
+    
+    
+    
 
     <div class="bestseller_jean">
         <h6>Sản phẩm jeans bán chạy </h6><hr>
@@ -346,7 +369,7 @@
         </div>
 
     
-        <button id="scrollTopBtn" class="scroll-top-btn">&#8593;</button>
+        <button class="scroll-top-btn" id="scrollTopBtn">&#8593;</button>
 
       
 
@@ -1266,7 +1289,8 @@
             <button id="okBtn">Tiếp tục mua hàng</button>
         </div>
     </div>
-    
+
+    <script src="assets/js/slideshow-index.js"></script>
     <script src="assets/js/scroll-top.js"></script>
     <script src="./assets/js/modal-cart.js"></script>
     <script src="assets/js/trangchu.js"></script>
