@@ -239,3 +239,29 @@ footer {
 }
 
 
+.scroll-top-btn {
+    position: fixed;
+    bottom: 50px;
+    right: -60px; /* Đặt nút ngoài màn hình */
+    background-color: white;
+    color: rgb(3, 3, 106);
+    
+    border:2px solid rgb(4, 4, 99);
+    padding: 10px 18px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: right 0.4s ease; /* Tạo hiệu ứng trượt vào */
+}
+
+.scroll-top-btn:hover {
+    background-color: #004080;
+    color:white;
+    border-color:white;
+}
+
+.scroll-top-btn.show {
+    right: 20px; /* Khi hiển thị, nút sẽ vào vị trí trong màn hình */
+}
+
