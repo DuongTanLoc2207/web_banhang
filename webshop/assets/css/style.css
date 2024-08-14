@@ -95,56 +95,75 @@ footer {
     margin-top:100px;
     color:white;
     font-size:23px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
 
 }
-.diachi img{
-    border-radius:50%;
-    margin-top:30px;
-}
-.diachi img:hover{
-    border :4px solid yellow;
-}
 
-.diachi a {
-    display: block;
-}
-
-.diachi{
-    width:35%;
-    text-align: center;
-    margin-left: 30px;
-}
-
-.fanpage{
+.mangxahoi{
     width:30%;
-    margin-left:50px;
-}
-
-.fanpage img{
-    border-radius:50%;
-    height:130px;
-    margin-top:50px;
-    margin-left:40px;
-}
-
-.fanpage img:hover{
-    border :4px solid yellow;
-}
-
-
-.zalo{
-    width:50%;
-    margin-left:50px;
-    padding-right:30px;
-    text-align: center;
-}
-
-.zalo img{
-    display: block;
+    margin-left: 50px;
     margin-top:30px;
-    margin-left:180px;
+    
 }
 
+.mangxahoi a {
+    display: inline;
+    color:white;
+    margin:5px;
+    border:0.5px solid white;
+    padding:3px;
+
+}
+.mangxahoi a:hover {
+    border:1px solid yellow;
+}
+
+
+
+
+.sanpham{
+    width:25%;
+   margin:30px;
+   white-space: nowrap;
+   margin-right:0px;
+}
+
+.sanpham a {
+    text-decoration: none;
+    color:white;
+    display:block;
+    margin:5px 30px;
+    font-size:20px;
+}
+
+.sanpham a:hover{
+    color:yellow;
+}
+
+.bentrongsanpham {
+    margin-left:30px;
+}
+
+.branch{
+    width:35%;
+    margin-top:30px;
+}
+
+
+   
+.branch a{
+    display: block;
+    color:white;
+    margin:5px;
+    text-decoration: none;
+    font-size:20px;
+
+}
+.branch a:hover{
+    color:yellow;
+}
 
 
 .imggioithieu{
